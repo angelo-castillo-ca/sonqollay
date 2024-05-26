@@ -1,0 +1,43 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Inicia la sesión para acceder a la información de la sesión
+session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "mysql";
+$dbname = "sonqollay";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+    // Consulta SQL para recuperar usuarios
+    $sql = "SELECT * FROM usuario";
+    
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        // Array para almacenar usuarios
+        $users = array();
+    
+        // Recorrer resultados y almacenar en el array
+        while($row = $result->fetch_assoc()) {
+            $users[] = $row;
+        }
+    
+        // Convertir array a formato JSON y devolverlo
+        echo json_encode($users);
+    } else {
+        echo "0 resultados";
+    }
+    
+    $conn->close();
+    ?>
+    
