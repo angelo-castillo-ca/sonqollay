@@ -105,6 +105,30 @@
     <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="../assets/js/Simple-Slider.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Realiza una solicitud HTTP para obtener la lista de usuarios desde el archivo PHP
+        $.getJSON('alumnos.php', function(users) {
+            // Itera sobre los usuarios recuperados
+            $.each(users, function(index, user) {
+                // Agrega una fila a la tabla con los datos del usuario
+                $('#userTable tbody').append(`
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.nombres}</td>
+                        <td>${user.apellido_paterno}</td>
+                        <td>${user.apellido_materno}</td>
+                        <td>${user.creditos}</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">
+                                Editar
+                            </button>
+                        </td>
+                    </tr>
+                `);
+            });
+        });
+    </script>
 </body>
 
 </html>
