@@ -30,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
 
         // Almacena el nombre del usuario en una variable de sesión
         $_SESSION['nombre_usuario'] = $row['nombres'];
-        $_SESSION['nombre_completo_usuario'] = $row['nombres'] . ' ' . $row['apellidos'];
+        $_SESSION['nombre_completo_usuario'] = $row['nombres'] . ' ' . $row['apellido_paterno'];
     } else {
         // Manejar el caso en que no se encuentra el usuario
         echo "Error: No se encontró el usuario.";
