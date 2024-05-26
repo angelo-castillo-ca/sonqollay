@@ -1,0 +1,722 @@
+[
+    {
+        "id": "1",
+        "pregunta": "Estás a cargo de un proyecto que ha enfrentado desafíos inesperados y retrasos. Tu equipo está desanimado y el plazo se está acercando. ¿Qué harías? ",
+        "respuesta1c": "Abandonar el proyecto y empezar de nuevo.",
+        "respuesta2": "Comunicarte con el equipo, identificar soluciones y ajustar el plan.",
+        "respuesta3": "Culpar a otros por los problemas y buscar nuevas contrataciones.",
+        "respuesta4": "Ignorar los problemas y esperar que se resuelvan por sí mismos.",
+        "nombre": "1"
+    },
+    {
+        "id": "2",
+        "pregunta": "Has perdido tu empleo y te sientes desesperado. ¿Cuál sería una estrategia resiliente para enfrentar esta situación?",
+        "respuesta1c": "Aislarte y evitar hablar sobre la pérdida del empleo.",
+        "respuesta2": "Buscar apoyo de amigos, familiares o redes profesionales y explorar nuevas oportunidades.",
+        "respuesta3": "Decidir que nunca más buscarás empleo debido a la situación económica.",
+        "respuesta4": "Culpar a otros por la pérdida del empleo y renunciar a buscar trabajo.",
+        "nombre": "1"
+    },
+    {
+        "id": "3",
+        "pregunta": "Estás a cargo de un equipo que está experimentando conflictos y falta de comunicación. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar los problemas y esperar a que se resuelvan por sí mismos.",
+        "respuesta2": "Responsabilizar a un miembro del equipo por los conflictos y tomar medidas punitivas.",
+        "respuesta3": "Facilitar una reunión para que los miembros del equipo expresen sus preocupaciones y trabajar juntos en soluciones.",
+        "respuesta4": "Dejar el equipo y buscar uno nuevo sin conflictos.",
+        "nombre": "1"
+    },
+    {
+        "id": "4",
+        "pregunta": "Has enfrentado un fracaso importante en un proyecto en el que has invertido mucho tiempo y esfuerzo. ¿Qué enfoque resiliente tomarías?",
+        "respuesta1c": "Rendirte y abandonar la idea de intentar algo similar en el futuro.",
+        "respuesta2": "Reflexionar sobre las lecciones aprendidas, ajustar tus estrategias y volver a intentarlo.",
+        "respuesta3": "Culpar a factores externos por el fracaso y evitar proyectos similares\nen el futuro.",
+        "respuesta4": "Ocultar el fracaso y no hablar sobre él con nadie.",
+        "nombre": "1"
+    },
+    {
+        "id": "5",
+        "pregunta": "Estás experimentando altos niveles de estrés debido a una carga de trabajo abrumadora. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar el estrés y continuar trabajando sin tomar medidas.",
+        "respuesta2": "Hablar con amigos o familiares sobre el estrés y buscar consejo.",
+        "respuesta3": "Tomar medidas para reducir el estrés, como practicar técnicas de relajación y establecer límites en tu carga de trabajo.",
+        "respuesta4": "Culpar a otros por tu estrés y esperar que desaparezca por sí solo.",
+        "nombre": "1"
+    },
+    {
+        "id": "6",
+        "pregunta": "Has sufrido una pérdida personal significativa y te sientes abrumado por la tristeza. ¿Cómo afrontarías esta situación de manera resiliente?",
+        "respuesta1c": "Evitar hablar sobre la pérdida y distraerte con otras actividades.",
+        "respuesta2": "Buscar apoyo emocional de amigos, familiares o profesionales de la salud mental.",
+        "respuesta3": "Culparte a ti mismo por la pérdida y aislarte de los demás.",
+        "respuesta4": "Ignorar tus sentimientos y continuar como si nada hubiera pasado.",
+        "nombre": "1"
+    },
+    {
+        "id": "7",
+        "pregunta": "Te enfrentas a críticas negativas y comentarios despectivos sobre tu trabajo. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Creer en las críticas y dudar de tus habilidades.",
+        "respuesta2": "Defender tu trabajo de manera agresiva y confrontar a los críticos.",
+        "respuesta3": "Evaluar objetivamente las críticas, identificar oportunidades de mejora y mantener una actitud positiva.",
+        "respuesta4": "Abandonar tus esfuerzos y dejar de trabajar en el proyecto.",
+        "nombre": "1"
+    },
+    {
+        "id": "8",
+        "pregunta": "Te enfrentas a una serie de fracasos en tus intentos de lograr una meta importante. ¿Cuál sería un enfoque resiliente para seguir adelante?",
+        "respuesta1c": "Concluir que no estás destinado a alcanzar esa meta y abandonarla por completo.",
+        "respuesta2": "Reflexionar sobre los fracasos, identificar áreas de mejora y ajustar tu enfoque.",
+        "respuesta3": "Culpar a factores externos por los fracasos y evitar la meta en el futuro.",
+        "respuesta4": "Ocultar los fracasos y no hablar sobre ellos con nadie.",
+        "nombre": "1"
+    },
+    {
+        "id": "9",
+        "pregunta": "Te enfrentas a dificultades financieras y luchas por llegar a fin de mes. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar las dificultades financieras y gastar más dinero.",
+        "respuesta2": "Buscar ayuda financiera, como asesoramiento crediticio o asistencia gubernamental.",
+        "respuesta3": "Culparte a ti mismo por la situación y aislarte de los demás.",
+        "respuesta4": "Gastar aún más dinero para tratar de resolver rápidamente los problemas financieros.",
+        "nombre": "1"
+    },
+    {
+        "id": "10",
+        "pregunta": "Estás a cargo de un equipo que ha experimentado un fracaso importante en un proyecto.\nLos miembros del equipo están desmotivados. ¿Cómo abordarías esta situación de manera resiliente?",
+        "respuesta1c": "Culpar a un miembro del equipo por el fracaso y tomar medidas punitivas.",
+        "respuesta2": "Ignorar el fracaso y seguir adelante sin analizarlo.",
+        "respuesta3": "Reunir al equipo, analizar las causas del fracaso y trabajar juntos en soluciones para futuros proyectos.",
+        "respuesta4": "Dejar el equipo y formar uno nuevo sin problemas.",
+        "nombre": "1"
+    },
+    {
+        "id": "11",
+        "pregunta": "Después de enfrentar una serie de rechazos en solicitudes de empleo, te sientes desalentado y sin esperanzas. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte y dejar de buscar empleo.",
+        "respuesta2": "Ignorar tus sentimientos y seguir solicitando empleo sin descanso.",
+        "respuesta3": "Tomar un tiempo para reflexionar sobre tus habilidades y objetivos profesionales y buscar oportunidades alternativas.",
+        "respuesta4": "Culparte a ti mismo y sentirte derrotado.",
+        "nombre": "1"
+    },
+    {
+        "id": "12",
+        "pregunta": "Estás estudiando para un examen importante, pero enfrentas muchas distracciones en casa. ¿Qué acción resiliente tomarías?",
+        "respuesta1c": "Ignorar las distracciones y seguir estudiando a pesar de\ntodo.",
+        "respuesta2": "Dejar de estudiar y posponer el examen.",
+        "respuesta3": "Buscar un lugar más tranquilo y libre de distracciones para estudiar.",
+        "respuesta4": "Rendirte y aceptar que no podrás concentrarte en casa.",
+        "nombre": "1"
+    },
+    {
+        "id": "13",
+        "pregunta": "Estás trabajando en un proyecto en equipo y uno de los miembros no está cumpliendo con\nsus responsabilidades, lo que afecta el progreso del proyecto. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar el problema y asumir las responsabilidades del miembro del equipo.",
+        "respuesta2": "Confrontar agresivamente al miembro del equipo y exigir que cumpla con sus tareas.",
+        "respuesta3": "Hablar en privado con el miembro del equipo para entender sus desafíos y ofrecer ayuda.",
+        "respuesta4": "Abandonar el proyecto debido a la falta de cooperación del\nmiembro del equipo.",
+        "nombre": "1"
+    },
+    {
+        "id": "14",
+        "pregunta": "Estás a cargo de liderar un equipo durante una crisis inesperada que afecta la productividad. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Culpar a los miembros del equipo por la situación y despedir a los menos productivos.",
+        "respuesta2": "Ignorar la crisis y seguir con los procedimientos habituales.",
+        "respuesta3": "Adaptar rápidamente los objetivos y procedimientos para enfrentar la\ncrisis y mantener al equipo informado y motivado.",
+        "respuesta4": "Renunciar a tu posición de liderazgo por temor a la responsabilidad.",
+        "nombre": "1"
+    },
+    {
+        "id": "15",
+        "pregunta": "Has cometido un error importante en el trabajo que ha tenido consecuencias negativas. ¿Qué acción resiliente tomarías?",
+        "respuesta1c": "Culparte a ti mismo y evitar enfrentar las consecuencias.",
+        "respuesta2": "Ignorar el error y esperar que se resuelva solo.",
+        "respuesta3": "Aceptar la responsabilidad, aprender de la experiencia y trabajar para remediar las consecuencias.",
+        "respuesta4": "Abandonar el trabajo por temor a más errores.",
+        "nombre": "1"
+    },
+    {
+        "id": "16",
+        "pregunta": "Has estado trabajando en un proyecto personal durante mucho tiempo y no has logrado\nlos resultados esperados. ¿Qué estrategia resiliente adoptarías?",
+        "respuesta1c": "Abandonar el proyecto y considerarlo un fracaso.",
+        "respuesta2": "Ignorar las dificultades y seguir adelante sin hacer cambios.",
+        "respuesta3": "Reevaluar tus objetivos y estrategias, y hacer ajustes para mejorar el rendimiento.",
+        "respuesta4": "Compararte con otros que han tenido éxito en proyectos similares y\nsentirte desalentado.",
+        "nombre": "1"
+    },
+    {
+        "id": "17",
+        "pregunta": "Has sufrido una pérdida importante en tu vida personal y te sientes abrumado por la tristeza y el dolor. ¿Cómo afrontarías esta situación de manera resiliente?",
+        "respuesta1c": "Evitar enfrentar las emociones y distraerte con actividades superficiales.",
+        "respuesta2": "Negar el dolor y pretender que todo está bien.",
+        "respuesta3": "Buscar apoyo emocional de amigos, familiares o profesionales y permitirte sentir y procesar tus emociones.",
+        "respuesta4": "Aislarte de los demás para evitar mostrar tus vulnerabilidades.",
+        "nombre": "1"
+    },
+    {
+        "id": "18",
+        "pregunta": "Estás enfrentando un período de alta presión y estrés en el trabajo y te sientes agotado. ¿Cómo cuidarías de ti mismo de manera resiliente?",
+        "respuesta1c": "Ignorar el estrés y seguir trabajando sin descanso.",
+        "respuesta2": "Dejar de lado todas las responsabilidades y tomar un tiempo indefinido libre.",
+        "respuesta3": "Priorizar el autocuidado al establecer límites, tomar descansos y practicar técnicas de manejo del estrés.",
+        "respuesta4": "Culparte a ti mismo por no poder manejar la presión.",
+        "nombre": "1"
+    },
+    {
+        "id": "19",
+        "pregunta": "Has experimentado una serie de fracasos en proyectos personales y te sientes desmotivado. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los fracasos y tratar de ocultarlos.",
+        "respuesta2": "Rendirte por completo y evitar intentar nuevos proyectos.",
+        "respuesta3": "Reflexionar sobre las lecciones aprendidas de los fracasos y utilizarlas\npara informar futuros proyectos.",
+        "respuesta4": "Compararte constantemente con otros que han tenido éxito y sentirte envidia.",
+        "nombre": "1"
+    },
+    {
+        "id": "20",
+        "pregunta": "Te enfrentas a críticas negativas de tus colegas en el trabajo que afectan tu autoestima. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar las críticas y pretender que no te afectan.",
+        "respuesta2": "Tomar todas las críticas de manera personal y sentirte desalentado.",
+        "respuesta3": "Reflexionar sobre las críticas constructivas y utilizarlas para mejorar tu desempeño.",
+        "respuesta4": "Culparte a ti mismo por no ser lo suficientemente competente.",
+        "nombre": "1"
+    },
+    {
+        "id": "21",
+        "pregunta": "Te enfrentas a un fracaso en un proyecto que habías invertido mucho tiempo y esfuerzo. ¿Cómo reaccionarías de manera resiliente?",
+        "respuesta1c": "Culparte a ti mismo por no haber sido lo suficientemente\ncompetente.",
+        "respuesta2": "Ignorar el fracaso y pretender que nunca ocurrió.",
+        "respuesta3": "Reflexionar sobre las razones detrás del fracaso, aprender de la experiencia y planificar un nuevo enfoque.",
+        "respuesta4": "Abandonar por completo cualquier intento futuro de proyectos\nsimilares.",
+        "nombre": "1"
+    },
+    {
+        "id": "22",
+        "pregunta": "Te enfrentas a cambios inesperados en tu lugar de trabajo que afectan tus tareas y responsabilidades. ¿Cómo afrontarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar los cambios y continuar con los procedimientos\nhabituales.",
+        "respuesta2": "Resistir activamente los cambios y rechazar adaptarte a nuevas\ncircunstancias.",
+        "respuesta3": "Adaptarte a los cambios, buscar oportunidades en medio de la\nincertidumbre y aprender nuevas habilidades si es necesario.",
+        "respuesta4": "Renunciar al trabajo debido a la incomodidad causada por los\ncambios.",
+        "nombre": "1"
+    },
+    {
+        "id": "23",
+        "pregunta": "Has perdido a un ser querido y te sientes abrumado por la tristeza. ¿Cómo te cuidarías de manera resiliente?",
+        "respuesta1c": "Evitar enfrentar las emociones y distraerte con actividades superficiales.",
+        "respuesta2": "Negar el dolor y pretender que todo está bien.",
+        "respuesta3": "Buscar apoyo emocional de amigos, familiares o profesionales y\npermitirte sentir y procesar tus emociones.",
+        "respuesta4": "Aislarte de los demás para evitar mostrar tus vulnerabilidades.",
+        "nombre": "1"
+    },
+    {
+        "id": "24",
+        "pregunta": "Estás enfrentando dificultades financieras y luchas por mantener tus gastos bajo control. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar tus problemas financieros y seguir gastando sin\nrestricciones.",
+        "respuesta2": "Entrar en pánico y tomar decisiones impulsivas para resolver la situación a corto plazo.",
+        "respuesta3": "Evaluar tus gastos, crear un presupuesto realista y buscar oportunidades para aumentar tus ingresos.",
+        "respuesta4": "Dejar de intentar resolver tus problemas financieros y aceptar la situación.",
+        "nombre": "1"
+    },
+    {
+        "id": "25",
+        "pregunta": "Estás trabajando en un proyecto que ha experimentado varios obstáculos y retrasos. ¿Cómo te mantendrías resiliente y motivado?",
+        "respuesta1c": "Rendirte y abandonar el proyecto debido a los obstáculos.",
+        "respuesta2": "Ignorar los obstáculos y seguir adelante sin abordar los problemas.",
+        "respuesta3": "Enfrentar los obstáculos uno por uno, buscar soluciones creativas\ny mantener una mentalidad positiva.",
+        "respuesta4": "Culparte a ti mismo por los retrasos y sentirte derrotado.",
+        "nombre": "1"
+    },
+    {
+        "id": "26",
+        "pregunta": "Estás experimentando una serie de fracasos en tus relaciones personales y te sientes desanimado. ¿Cómo responderías de manera resiliente?",
+        "respuesta1c": "Ignorar los fracasos y pretender que no te importan.",
+        "respuesta2": "Aislarte de los demás para evitar futuros fracasos.",
+        "respuesta3": "Reflexionar sobre las lecciones aprendidas de las relaciones pasadas\ny trabajar en mejorar tus habilidades de comunicación y empatía.",
+        "respuesta4": "Culparte a ti mismo y sentirte incapaz de establecer relaciones\nexitosas.",
+        "nombre": "1"
+    },
+    {
+        "id": "27",
+        "pregunta": "Te enfrentas a críticas y comentarios negativos en línea que afectan tu autoestima. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Ignorar los comentarios y evitar las redes sociales por completo.",
+        "respuesta2": "Tomar cada comentario de manera personal y sentirte derrotado.",
+        "respuesta3": "Evaluar los comentarios de manera objetiva y filtrar los útiles de los\ndestructivos.",
+        "respuesta4": "Rendirte a la presión y eliminar tus perfiles en línea.",
+        "nombre": "1"
+    },
+    {
+        "id": "28",
+        "pregunta": "Estás trabajando en un proyecto que requiere un alto nivel de creatividad, pero te sientes bloqueado y sin inspiración. ¿Qué enfoque resiliente tomarías?",
+        "respuesta1c": "Ignorar el bloqueo creativo y esperar a que desaparezca por sí solo.",
+        "respuesta2": "Rendirte en el proyecto y considerarlo una pérdida total.",
+        "respuesta3": "Tomar un descanso, explorar diferentes fuentes de inspiración y probar nuevas perspectivas.",
+        "respuesta4": "Culparte a ti mismo por la falta de creatividad y sentirte frustrado.",
+        "nombre": "1"
+    },
+    {
+        "id": "29",
+        "pregunta": "Estás trabajando en un proyecto que enfrenta retrasos debido a circunstancias fuera\nde tu control. ¿Cómo manejarías esta situación de manera resiliente?",
+        "respuesta1c": "Culparte a ti mismo por los retrasos y sentirte derrotado.",
+        "respuesta2": "Ignorar los retrasos y continuar trabajando sin considerar los obstáculos.",
+        "respuesta3": "Adaptar el plan y los plazos según las circunstancias cambiantes\ny comunicar las actualizaciones al equipo.",
+        "respuesta4": "Abandonar el proyecto debido a la frustración por los retrasos.",
+        "nombre": "1"
+    },
+    {
+        "id": "30",
+        "pregunta": "Te enfrentas a una serie de cambios inesperados en tu vida personal que te generan\nincertidumbre. ¿Qué estrategia resiliente adoptarías?",
+        "respuesta1c": "Ignorar los cambios y continuar con la rutina habitual.",
+        "respuesta2": "Resistir activamente los cambios y negarte a adaptarte a nuevas\ncircunstancias.",
+        "respuesta3": "Practicar la aceptación y la adaptación gradual a los cambios mientras\nbuscas oportunidades en medio de la incertidumbre.",
+        "respuesta4": "Dejar de intentar adaptarte a los cambios y aislarte de los demás.",
+        "nombre": "1"
+    },
+    {
+        "id": "31",
+        "pregunta": "Después de un evento traumático, te sientes abrumado por emociones negativas.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar las emociones y seguir adelante como si nada hubiera pasado.",
+        "respuesta2": "Rendirte ante las emociones y aislarte de los demás.",
+        "respuesta3": "Aceptar tus emociones, buscar apoyo y buscar formas saludables\nde afrontarlas.",
+        "respuesta4": "Culpar a otras personas por tus emociones.",
+        "nombre": "1"
+    },
+    {
+        "id": "32",
+        "pregunta": "Te enfrentas a múltiples desafíos en el trabajo y en tu vida personal al mismo tiempo.\n¿Qué enfoque refleja una actitud resiliente?",
+        "respuesta1c": "Dejar de lado tus responsabilidades para evitar el estrés.",
+        "respuesta2": "Ignorar los desafíos y esperar a que desaparezcan por sí mismos.",
+        "respuesta3": "Priorizar y desarrollar un plan para abordar cada desafío de manera organizada.",
+        "respuesta4": "Culpar a factores externos por los desafíos que enfrentas.",
+        "nombre": "1"
+    },
+    {
+        "id": "33",
+        "pregunta": "Has perdido tu empleo debido a circunstancias fuera de tu control. ¿Qué enfoque refleja una actitud resiliente?",
+        "respuesta1c": "Culpar a otras personas por la pérdida y sentirte derrotado.",
+        "respuesta2": "Ignorar la situación y esperar a que cambie por sí sola.",
+        "respuesta3": "Evaluar tus habilidades, buscar nuevas oportunidades y adaptarte\na la situación.",
+        "respuesta4": "Aislarte de los demás y no buscar soluciones.",
+        "nombre": "1"
+    },
+    {
+        "id": "34",
+        "pregunta": "Estás a punto de presentar un proyecto importante y te das cuenta de que cometiste un error crucial. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar el error y presentar el proyecto como está.",
+        "respuesta2": "Dejar de lado el proyecto y no presentarlo en absoluto.",
+        "respuesta3": "Reconocer el error, buscar soluciones y tomar medidas para corregirlo.",
+        "respuesta4": "Culpar a otros por el error y no asumir responsabilidad.",
+        "nombre": "1"
+    },
+    {
+        "id": "35",
+        "pregunta": "Te enfrentas a críticas y comentarios negativos sobre tu trabajo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar las críticas y evitar cualquier interacción relacionada\ncon el trabajo.",
+        "respuesta2": "Tomar todas las críticas de manera personal y sentirte desanimado.",
+        "respuesta3": "Evaluar las críticas de manera objetiva y considerar si hay oportunidades de mejora.",
+        "respuesta4": "Culpar a otros por las críticas y rechazar cualquier retroalimentación.",
+        "nombre": "1"
+    },
+    {
+        "id": "36",
+        "pregunta": "Te has enfrentado a una serie de fracasos en tus intentos por alcanzar una meta\nimportante. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte y asumir que la meta es inalcanzable.",
+        "respuesta2": "Ignorar los fracasos y continuar sin hacer cambios en tu enfoque.",
+        "respuesta3": "Reflexionar sobre los fracasos, aprender de ellos y ajustar tu estrategia.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "37",
+        "pregunta": "Te enfrentas a una serie de obstáculos en un proyecto importante. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los obstáculos y esperar a que se resuelvan por sí solos.",
+        "respuesta2": "Rendirte ante los obstáculos y abandonar el proyecto.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos.",
+        "respuesta4": "Culpar a otros por los obstáculos y buscar ayuda externa.",
+        "nombre": "1"
+    },
+    {
+        "id": "38",
+        "pregunta": "Estás liderando un equipo en un proyecto y enfrentas desafíos de comunicación y colaboración. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Culpar a los miembros del equipo por los desafíos y abandonar el proyecto.",
+        "respuesta2": "Ignorar los problemas de comunicación y esperar a que se resuelvan\npor sí mismos.",
+        "respuesta3": "Abordar abiertamente los desafíos de comunicación, fomentar la colaboración y buscar soluciones.",
+        "respuesta4": "Delegar la responsabilidad de resolver los desafíos a otro miembro\ndel equipo.",
+        "nombre": "1"
+    },
+    {
+        "id": "39",
+        "pregunta": "Estás lidiando con una crisis financiera que afecta tus ahorros y bienestar económico.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Gastar más dinero para sentirte mejor temporalmente.",
+        "respuesta2": "Ignorar la crisis financiera y esperar a que mejore por sí sola.",
+        "respuesta3": "Buscar asesoramiento financiero y desarrollar un plan realista para manejar la crisis.",
+        "respuesta4": "Culpar a factores externos por la crisis financiera y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "40",
+        "pregunta": "Has perdido a un ser querido y estás experimentando un profundo dolor emocional.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Evitar completamente cualquier emoción relacionada con\nla pérdida.",
+        "respuesta2": "Aislarte de los demás y no buscar apoyo emocional.",
+        "respuesta3": "Aceptar tus emociones, buscar apoyo y buscar formas saludables de\nafrontar la pérdida.",
+        "respuesta4": "Culpar a otros por la pérdida y cerrarte emocionalmente.",
+        "nombre": "1"
+    },
+    {
+        "id": "41",
+        "pregunta": "Te enfrentas a críticas negativas y comentarios despectivos en línea sobre tu trabajo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar completamente los comentarios y evitar las plataformas en línea.",
+        "respuesta2": "Tomar todos los comentarios de manera personal y sentirte abrumado.",
+        "respuesta3": "Evaluar las críticas de manera objetiva y decidir si alguna tiene mérito constructivo.",
+        "respuesta4": "Culpar a otros por los comentarios y retirarte de la exposición en línea.",
+        "nombre": "1"
+    },
+    {
+        "id": "42",
+        "pregunta": "Estás experimentando una serie de reveses en tu búsqueda de empleo. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Rendirte por completo y dejar de buscar empleo.",
+        "respuesta2": "Ignorar los reveses y continuar aplicando a trabajos sin hacer ajustes.",
+        "respuesta3": "Reflexionar sobre los reveses, identificar áreas de mejora y ajustar tu\nenfoque.",
+        "respuesta4": "Culpar a factores externos por los reveses y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "43",
+        "pregunta": "Te enfrentas a un conflicto importante con un amigo cercano. ¿Qué enfoque demuestra resiliencia?",
+        "respuesta1c": "Ignorar el conflicto y evitar hablar del tema.",
+        "respuesta2": "Cortar por completo la relación con tu amigo.",
+        "respuesta3": "Comunicarte abierta y honestamente con tu amigo para resolver el conflicto.",
+        "respuesta4": "Culpar a tu amigo por el conflicto y no buscar una solución.",
+        "nombre": "1"
+    },
+    {
+        "id": "44",
+        "pregunta": "Estás lidiando con una enfermedad crónica que afecta tu calidad de vida. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar la enfermedad y no buscar tratamiento.",
+        "respuesta2": "Dejar que la enfermedad te impida participar en actividades que\ndisfrutas.",
+        "respuesta3": "Buscar tratamiento médico y ajustar tu estilo de vida para manejar\nla enfermedad.",
+        "respuesta4": "Culpar a factores externos por la enfermedad y no hacer nada al respecto.",
+        "nombre": "1"
+    },
+    {
+        "id": "45",
+        "pregunta": "Te enfrentas a dificultades financieras debido a la pérdida de empleo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Gastar todo el dinero restante en compras impulsivas.",
+        "respuesta2": "Ignorar la situación financiera y esperar a que mejore sin acción.",
+        "respuesta3": "Desarrollar un presupuesto, buscar asesoramiento financiero y manejar gastos de manera responsable.",
+        "respuesta4": "Culpar a otros por la situación financiera y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "46",
+        "pregunta": "Estás a cargo de un proyecto que enfrenta desafíos imprevistos. ¿Qué enfoque demuestra resiliencia?",
+        "respuesta1c": "Culpar a los miembros del equipo por los desafíos y abandonar el proyecto.",
+        "respuesta2": "Ignorar los desafíos y esperar a que desaparezcan por sí mismos.",
+        "respuesta3": "Colaborar con el equipo para identificar soluciones y superar los desafíos juntos.",
+        "respuesta4": "Delegar la responsabilidad de resolver los desafíos a otro miembro del equipo.",
+        "nombre": "1"
+    },
+    {
+        "id": "47",
+        "pregunta": "Te enfrentas a una serie de fracasos en tus intentos por alcanzar una meta\nimportante. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte y asumir que la meta es inalcanzable.",
+        "respuesta2": "Ignorar los fracasos y continuar sin cambios en tu enfoque.",
+        "respuesta3": "Reflexionar sobre los fracasos, aprender de ellos y ajustar tu estrategia.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "48",
+        "pregunta": "Te enfrentas a una serie de obstáculos mientras intentas completar un proyecto importante. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Abandonar el proyecto por completo debido a los obstáculos.",
+        "respuesta2": "Ignorar los obstáculos y continuar sin hacer cambios.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos.",
+        "respuesta4": "Culpar a otros por los obstáculos que enfrentas.",
+        "nombre": "1"
+    },
+    {
+        "id": "49",
+        "pregunta": "Te enfrentas a una crisis de salud que requiere un cambio significativo en tu estilo de vida. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar la crisis de salud y continuar con tus hábitos actuales.",
+        "respuesta2": "Sentirte abrumado por la situación y no hacer ningún cambio.",
+        "respuesta3": "Aceptar la situación, buscar apoyo médico y hacer los ajustes\nnecesarios en tu estilo de vida.",
+        "respuesta4": "Culpar a factores externos por la crisis de salud y no tomar ninguna\nacción.",
+        "nombre": "1"
+    },
+    {
+        "id": "50",
+        "pregunta": "Te enfrentas a una serie de críticas negativas en tu desempeño laboral. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Ignorar por completo las críticas y continuar como si nada\nhubiera pasado.",
+        "respuesta2": "Dejar que las críticas afecten tu autoestima y tu confianza.",
+        "respuesta3": "Evaluar las críticas de manera objetiva y utilizarlas para mejorar tu\nrendimiento.",
+        "respuesta4": "Culpar a otros por las críticas y rechazar cualquier responsabilidad.",
+        "nombre": "1"
+    },
+    {
+        "id": "51",
+        "pregunta": "Te encuentras en una situación laboral insatisfactoria. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar tus sentimientos de insatisfacción y continuar como\nsi nada hubiera pasado.",
+        "respuesta2": "Renunciar sin tener un plan alternativo en su lugar.",
+        "respuesta3": "Evaluar tus opciones, buscar asesoramiento y tomar medidas para explorar nuevas oportunidades.",
+        "respuesta4": "Culpar a otros por la situación y resignarte a permanecer en ella.",
+        "nombre": "1"
+    },
+    {
+        "id": "52",
+        "pregunta": "Te has enfrentado a una serie de fracasos en tus intentos de establecer tu propio negocio. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte por completo y abandonar la idea de tener tu propio negocio.",
+        "respuesta2": "Ignorar los fracasos y continuar con el mismo enfoque sin cambios.",
+        "respuesta3": "Reflexionar sobre los fracasos, aprender de ellos y ajustar tu estrategia\nempresarial.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte derrotado.",
+        "nombre": "1"
+    },
+    {
+        "id": "53",
+        "pregunta": "Te encuentras en una relación personal difícil y llena de conflictos. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los problemas y continuar con la relación como está.",
+        "respuesta2": "Terminar la relación abruptamente sin intentar resolver los conflictos.",
+        "respuesta3": "Abordar abiertamente los problemas, buscar comunicación y trabajar\nen conjunto para mejorar la relación.",
+        "respuesta4": "Culpar a la otra persona por los problemas y retirarte emocionalmente.",
+        "nombre": "1"
+    },
+    {
+        "id": "54",
+        "pregunta": "Has experimentado una serie de rechazos en tus solicitudes de admisión a programas educativos. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte en la búsqueda de educación y no aplicar a más\nprogramas.",
+        "respuesta2": "Ignorar los rechazos y continuar aplicando a los mismos programas.",
+        "respuesta3": "Reflexionar sobre los rechazos, identificar áreas de mejora y explorar\notras opciones educativas.",
+        "respuesta4": "Culpar a factores externos por los rechazos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "55",
+        "pregunta": "Te enfrentas a una serie de obstáculos mientras intentas mejorar tus habilidades en un área específica. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Abandonar por completo el objetivo de mejorar tus habilidades.",
+        "respuesta2": "Ignorar los obstáculos y esperar que desaparezcan por sí solos.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos en tu camino.",
+        "respuesta4": "Culpar a otros por los obstáculos que enfrentas y rendirte.",
+        "nombre": "1"
+    },
+    {
+        "id": "56",
+        "pregunta": "Te enfrentas a una serie de desafíos en tu vida personal y profesional al mismo tiempo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los desafíos y esperar que desaparezcan por sí solos.",
+        "respuesta2": "Sentirte abrumado por los desafíos y rendirte ante ellos.",
+        "respuesta3": "Priorizar y desarrollar un plan para abordar cada desafío de manera organizada.",
+        "respuesta4": "Culpar a factores externos por los desafíos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "57",
+        "pregunta": "Estás experimentando dificultades financieras debido a una inversión que no salió como\nse esperaba. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar la situación financiera y esperar a que cambie por sí sola.",
+        "respuesta2": "Sentirte desesperado y abandonar por completo cualquier inversión\nfutura.",
+        "respuesta3": "Evaluar la situación financiera, aprender de la experiencia y ajustar tu\nenfoque en futuras inversiones.",
+        "respuesta4": "Culpar a otros por la inversión fallida y sentirte frustrado.",
+        "nombre": "1"
+    },
+    {
+        "id": "58",
+        "pregunta": "Estás liderando un equipo en un proyecto que ha enfrentado una serie de reveses. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Culpar a los miembros del equipo por los reveses y abandonar el proyecto.",
+        "respuesta2": "Ignorar los reveses y esperar a que se resuelvan por sí mismos.",
+        "respuesta3": "Colaborar con el equipo para identificar soluciones y persistir a pesar de los reveses.",
+        "respuesta4": "Delegar la responsabilidad de superar los reveses a otro miembro\ndel equipo.",
+        "nombre": "1"
+    },
+    {
+        "id": "59",
+        "pregunta": "Te enfrentas a una serie de críticas negativas en tu desempeño laboral. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Ignorar por completo las críticas y continuar como si nada hubiera pasado.",
+        "respuesta2": "Dejar que las críticas afecten tu autoestima y confianza en ti mismo.",
+        "respuesta3": "Evaluar las críticas de manera objetiva y utilizarlas para mejorar tu rendimiento y habilidades.",
+        "respuesta4": "Culpar a otros por las críticas y rechazar cualquier responsabilidad.",
+        "nombre": "1"
+    },
+    {
+        "id": "60",
+        "pregunta": "Te enfrentas a un conflicto con un colega en el trabajo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar el conflicto y evitar cualquier interacción con el colega.",
+        "respuesta2": "Reactuar emocionalmente y hacer comentarios negativos sobre el colega.",
+        "respuesta3": "Abordar el conflicto de manera abierta y respetuosa, buscando una\nsolución constructiva.",
+        "respuesta4": "Culpar al colega por el conflicto y no tomar medidas para resolverlo.",
+        "nombre": "1"
+    },
+    {
+        "id": "61",
+        "pregunta": "Te enfrentas a una serie de obstáculos en la realización de un proyecto creativo.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Abandonar el proyecto por completo debido a los obstáculos.",
+        "respuesta2": "Ignorar los obstáculos y continuar sin hacer ajustes en tu enfoque creativo.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos en tu camino.",
+        "respuesta4": "Culpar a otros por los obstáculos que enfrentas y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "62",
+        "pregunta": "Te encuentras en una relación personal en la que enfrentas desafíos y desacuerdos\nconstantes. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los desafíos y esperar que la relación mejore\npor sí sola.",
+        "respuesta2": "Terminar la relación sin intentar resolver los desacuerdos.",
+        "respuesta3": "Abordar los desafíos de manera abierta y buscar comunicación y compromiso para mejorar la relación.",
+        "respuesta4": "Culpar a la otra persona por los desafíos y retirarte emocionalmente.",
+        "nombre": "1"
+    },
+    {
+        "id": "63",
+        "pregunta": "Te enfrentas a una serie de fracasos en tus intentos por lograr un objetivo académico importante. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte por completo y abandonar la búsqueda del objetivo académico.",
+        "respuesta2": "Ignorar los fracasos y continuar con el mismo enfoque sin cambios.",
+        "respuesta3": "Reflexionar sobre los fracasos, aprender de ellos y ajustar tu enfoque académico.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "64",
+        "pregunta": "Estás liderando un proyecto en el trabajo y te enfrentas a dificultades en la colaboración\ncon tu equipo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Culpar a los miembros del equipo por las dificultades y abandonar el proyecto.",
+        "respuesta2": "Ignorar los problemas de colaboración y esperar a que desaparezcan\npor sí solos.",
+        "respuesta3": "Abordar abiertamente las dificultades de colaboración, fomentar la\ncomunicación y trabajar juntos para superarlas.",
+        "respuesta4": "Delegar la responsabilidad de resolver los problemas de colaboración\na otro miembro del equipo.",
+        "nombre": "1"
+    },
+    {
+        "id": "65",
+        "pregunta": "Te enfrentas a una serie de rechazos en tus intentos de establecer conexiones sociales.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Evitar por completo las situaciones sociales para evitar el rechazo.",
+        "respuesta2": "Ignorar los rechazos y continuar intentando sin hacer cambios.",
+        "respuesta3": "Reflexionar sobre los rechazos, identificar áreas de mejora y ajustar tu enfoque en las interacciones sociales.",
+        "respuesta4": "Culpar a factores externos por los rechazos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "66",
+        "pregunta": "Te enfrentas a una serie de obstáculos en tu búsqueda de empleo. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Abandonar por completo la búsqueda de empleo debido a los obstáculos.",
+        "respuesta2": "Ignorar los obstáculos y seguir aplicando a trabajos sin cambios.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos en tu\ncamino hacia el empleo.",
+        "respuesta4": "Culpar a factores externos por los obstáculos y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "67",
+        "pregunta": "Te enfrentas a una serie de dificultades financieras debido a la pérdida de empleo.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Gastar todo el dinero restante en compras impulsivas para sentirte mejor.",
+        "respuesta2": "Ignorar la situación financiera y esperar a que cambie por sí sola.",
+        "respuesta3": "Desarrollar un plan de presupuesto, buscar asesoramiento financiero y\nmanejar gastos de manera responsable.",
+        "respuesta4": "Culpar a factores externos por la situación financiera y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "68",
+        "pregunta": "Estás experimentando un período de estrés intenso debido a múltiples responsabilidades. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar el estrés y esperar a que desaparezca por sí solo.",
+        "respuesta2": "Rendirte ante el estrés y no cumplir con tus responsabilidades.",
+        "respuesta3": "Buscar estrategias de manejo del estrés y adoptar hábitos saludables\npara enfrentarlo.",
+        "respuesta4": "Culpar a otros por el estrés y evitar tus responsabilidades.",
+        "nombre": "1"
+    },
+    {
+        "id": "69",
+        "pregunta": "Te enfrentas a una serie de desafíos en la crianza de tus hijos. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los desafíos y esperar a que desaparezcan por sí solos.",
+        "respuesta2": "Sentirte abrumado y rendirte en tus responsabilidades parentales.",
+        "respuesta3": "Buscar recursos de crianza, apoyo y desarrollar estrategias efectivas\npara abordar los desafíos.",
+        "respuesta4": "Culpar a factores externos por los desafíos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "70",
+        "pregunta": "Te enfrentas a dificultades en tu búsqueda de equilibrio entre el trabajo y la vida personal. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar las dificultades y continuar sin hacer cambios en\ntu rutina.",
+        "respuesta2": "Rendirte y dejar de intentar encontrar un equilibrio.",
+        "respuesta3": "Evaluar tu situación, buscar formas de optimizar tu tiempo y establecer\nlímites saludables.",
+        "respuesta4": "Culpar a otros por las dificultades y sentirte abrumado.",
+        "nombre": "1"
+    },
+    {
+        "id": "71",
+        "pregunta": "Te enfrentas a una serie de fracasos en tus intentos por mejorar tus habilidades en una actividad. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte y asumir que no tienes talento para esa actividad.",
+        "respuesta2": "Ignorar los fracasos y continuar sin hacer ajustes en tu enfoque.",
+        "respuesta3": "Reflexionar sobre los fracasos, identificar áreas de mejora y ajustar tu enfoque en la actividad.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "72",
+        "pregunta": "Te enfrentas a dificultades en tu relación con un ser querido. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar los problemas y esperar a que la relación mejore por sí sola.",
+        "respuesta2": "Distanciarte por completo de la persona y evitar cualquier interacción.",
+        "respuesta3": "Abordar abiertamente los problemas, buscar comunicación y trabajar en conjunto para fortalecer la relación.",
+        "respuesta4": "Culpar a la otra persona por los problemas y retirarte emocionalmente.",
+        "nombre": "1"
+    },
+    {
+        "id": "73",
+        "pregunta": "Estás experimentando dificultades en tu salud mental debido al estrés laboral.\n¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar el estrés y esperar a que desaparezca por sí solo.",
+        "respuesta2": "Dejar que el estrés afecte gravemente tu bienestar sin tomar medidas.",
+        "respuesta3": "Buscar apoyo profesional, adoptar técnicas de manejo del estrés y cuidar tu salud mental.",
+        "respuesta4": "Culpar a factores externos por el estrés y no hacer nada al respecto.",
+        "nombre": "1"
+    },
+    {
+        "id": "74",
+        "pregunta": "Te encuentras en una situación en la que has perdido la motivación y la pasión por tus actividades diarias. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar la falta de motivación y continuar con la rutina\nsin cambios.",
+        "respuesta2": "Rendirte ante la falta de pasión y evitar completamente tus actividades.",
+        "respuesta3": "Reflexionar sobre tus intereses y objetivos, buscar formas de revitalizar\ntu motivación y pasión.",
+        "respuesta4": "Culpar a factores externos por la falta de motivación y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "75",
+        "pregunta": "Te enfrentas a una serie de obstáculos en la realización de un proyecto creativo. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Abandonar el proyecto por completo debido a los\nobstáculos.",
+        "respuesta2": "Ignorar los obstáculos y continuar sin hacer cambios en tu enfoque\ncreativo.",
+        "respuesta3": "Buscar soluciones creativas y persistir a pesar de los obstáculos en\ntu camino.",
+        "respuesta4": "Culpar a otros por los obstáculos que enfrentas y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "76",
+        "pregunta": "Estás enfrentando una serie de rechazos en tus intentos de establecer nuevas amistades. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Evitar por completo la búsqueda de nuevas amistades debido a los rechazos.",
+        "respuesta2": "Ignorar los rechazos y continuar buscando amistades sin cambios.",
+        "respuesta3": "Reflexionar sobre los rechazos, identificar áreas de mejora y ajustar tu\nenfoque en las interacciones sociales.",
+        "respuesta4": "Culpar a factores externos por los rechazos y sentirte desesperado.",
+        "nombre": "1"
+    },
+    {
+        "id": "77",
+        "pregunta": "Te enfrentas a dificultades en tu búsqueda de un cambio de carrera. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Rendirte por completo en la búsqueda de un cambio de\ncarrera.",
+        "respuesta2": "Ignorar las dificultades y continuar sin cambios en tu enfoque.",
+        "respuesta3": "Buscar oportunidades alternativas, adquirir nuevas habilidades y persistir en tu búsqueda.",
+        "respuesta4": "Culpar a factores externos por las dificultades y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "78",
+        "pregunta": "Estás experimentando dificultades en tu relación con un familiar cercano. ¿Cuál es una\nrespuesta resiliente?",
+        "respuesta1c": "Ignorar los problemas y esperar a que la relación se arregle\npor sí sola.",
+        "respuesta2": "Cortar por completo el contacto con el familiar y evitar cualquier\nconflicto.",
+        "respuesta3": "Abordar abiertamente los problemas, buscar comunicación y trabajar juntos para resolver los desafíos.",
+        "respuesta4": "Culpar al familiar por los problemas y retirarte emocionalmente.",
+        "nombre": "1"
+    },
+    {
+        "id": "79",
+        "pregunta": "Te enfrentas a una serie de fracasos en tus intentos de llevar a cabo un proyecto comunitario. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Rendirte por completo en la realización del proyecto\ncomunitario.",
+        "respuesta2": "Ignorar los fracasos y continuar sin cambios en tu enfoque.",
+        "respuesta3": "Reflexionar sobre los fracasos, identificar áreas de mejora y ajustar tu estrategia para el proyecto.",
+        "respuesta4": "Culpar a factores externos por los fracasos y sentirte desanimado.",
+        "nombre": "1"
+    },
+    {
+        "id": "80",
+        "pregunta": "Te encuentras en una situación en la que estás experimentando una falta de dirección y propósito en tu vida. ¿Cuál es una respuesta resiliente?",
+        "respuesta1c": "Ignorar la falta de dirección y continuar con la rutina sin cambios.",
+        "respuesta2": "Dejar que la falta de propósito afecte tu bienestar emocional y mental.",
+        "respuesta3": "Reflexionar sobre tus valores y metas, explorar nuevas oportunidades y buscar formas de encontrar propósito.",
+        "respuesta4": "Culpar a factores externos por la falta de dirección y sentirte\ndesesperado.",
+        "nombre": "1"
+    }
+]
