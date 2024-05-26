@@ -13,7 +13,7 @@ if (isset($_SESSION['user_id'])) {
     // Ejemplo de uso en una consulta
     include '../coneccion.php';
 
-    $sql = "SELECT id, nombres,apellido_paterno,materno FROM usuario WHERE id = ?";
+    $sql = "SELECT id, nombres,apellido_paterno,apellido_materno FROM usuario WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
