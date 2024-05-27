@@ -85,9 +85,12 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    // Mostrar un mensaje de alerta con la respuesta del servidor
-                    alert(data.message);
-                    // Redirigir a otra página o realizar alguna acción adicional si es necesario
+                       // Mostrar un mensaje de alerta con la respuesta del servidor
+                        alert(data.message);
+                        // Redirigir a la página de alumnos si la edición fue exitosa
+                        if (data.success) {
+                            window.location.href = data.redirect_url;
+                        }
                 })
                 .catch(error => console.error('Error:', error));
             });

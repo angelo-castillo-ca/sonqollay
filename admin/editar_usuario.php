@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = htmlspecialchars($_POST['correo']);
     $passwd = htmlspecialchars($_POST['passwd']);
     $rol = htmlspecialchars($_POST['rol']);
-    $creditos = intval($_POST['creditos']); // Convertir a entero
+    $creditos = isset($_POST['creditos']) ? intval($_POST['creditos']) : 0; // Convertir a entero y establecer como cero si no está definido
 
     // Consulta preparada para actualizar los datos del usuario
-    $sql = "UPDATE usuarios SET apellido_paterno=?, apellido_materno=?, correo=?, passwd=?, rol=?, creditos=? WHERE id=?";
+    $sql = "UPDATE usuario SET apellido_paterno=?, apellido_materno=?, correo=?, passwd=?, rol=?, creditos=? WHERE id=?";
 
     // Preparar la consulta
     $stmt = $conn->prepare($sql);
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("sssssii", $apellido_paterno, $apellido_materno, $correo, $passwd, $rol, $creditos, $id);
         if ($stmt->execute()) {
             // Si la actualización fue exitosa
-            echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente']);
+            echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'alumnos.html']);
         } else {
             // Si hubo un error al ejecutar la consulta
             echo json_encode(['success' => false, 'error' => 'Error al ejecutar la consulta: ' . $stmt->error]);
