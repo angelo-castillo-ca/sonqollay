@@ -1,3 +1,6 @@
+<?php
+include 'session.php';
+?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 
