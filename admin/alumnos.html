@@ -125,7 +125,7 @@
                     // Agregar evento de clic al botón de editar
                     $('.edit-button').click(function() {
                         var userId = $(this).data('id');
-                        window.location.href = 'Editar-user.html';
+                        window.location.href = 'Editar-user.html?id=' + userId;
                     });
                 },
                 error: function(xhr, status, error) {
