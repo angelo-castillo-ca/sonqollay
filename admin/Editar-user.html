@@ -41,33 +41,53 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const userId = 1; // Cambia esto por el ID del usuario que deseas editar
-            fetch(`obtener_usuario.php?id=${userId}`)
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('apellido_paterno').value = data.apellido_paterno;
-                    document.getElementById('apellido_materno').value = data.apellido_materno;
-                    document.getElementById('correo').value = data.correo;
-                    document.getElementById('passwd').value = data.passwd;
-                    document.getElementById('rol').value = data.rol;
-                    document.getElementById('creditos').value = data.creditos;
-                    document.getElementById('usuario_id').value = data.id;
-                })
-                .catch(error => console.error('Error:', error));
+            // Obtener el ID del usuario de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const userId = urlParams.get('id');
 
+            // Imprimir el valor de userId para depurar
+            console.log('UserID:', userId);
+            
+
+            // Verificar si el ID del usuario es válido
+            if (userId && parseInt(userId) > 0) {
+            // Realizar la solicitud para obtener los datos del usuario
+            fetch(`obtener_usuario.php?id=${userId}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Asignar valores a los campos del formulario
+                document.getElementById('apellido_paterno').value = data.apellido_paterno ?? '';
+                document.getElementById('apellido_materno').value = data.apellido_materno ?? '';
+                document.getElementById('correo').value = data.correo ?? '';
+                document.getElementById('passwd').value = data.passwd ?? '';
+                document.getElementById('rol').value = data.rol ?? '';
+                // Verificar si creditos está definido y asignar cero si no lo está
+                document.getElementById('creditos').value = data.creditos ?? 0;
+                document.getElementById('usuario_id').value = data.id ?? '';
+            })
+            .catch(error => console.error('Error:', error));
+    } else {
+        console.error('ID del usuario no válido');
+    }
+
+            // Agregar el evento submit al formulario de edición
             document.getElementById('editar-usuario-form').addEventListener('submit', function (e) {
                 e.preventDefault();
 
+                // Obtener los datos del formulario
                 const formData = new FormData(this);
 
+                // Enviar los datos del formulario para editar el usuario
                 fetch('editar_usuario.php', {
                     method: 'POST',
                     body: formData
                 })
                 .then(response => response.json())
                 .then(data => {
+                    // Mostrar un mensaje de alerta con la respuesta del servidor
                     alert(data.message);
-                    // Redirige a otra página o realiza alguna acción adicional
+                    // Redirigir a otra página o realizar alguna acción adicional si es necesario
                 })
                 .catch(error => console.error('Error:', error));
             });
