@@ -8,21 +8,21 @@ include 'session.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Profile - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.user.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/Data-Table-styles.css">
-    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/Data-Table-styles.css">
+    <link rel="stylesheet" href="../assets/css/Data-Table.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
+    <link rel="stylesheet" href="../assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
     <script src="scripts_user.js"></script>
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light" style="background: rgb(52,131,225);">
-        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="assets/img/LOGO_VARIACIONES/LOGO_SONQOLLAY.png" width="171" height="29"></a>
+        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="../assets/img/logos/LOGO SONQOLLAY.png" width="171" height="29"></a>
             
                 <div class="d-none d-sm-block topbar-divider"></div>
                 <li class="nav-item dropdown no-arrow">
@@ -70,8 +70,8 @@ include 'session.php';
                             <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
                             <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                 <div onclick="data_liderazgo()" class="card clean-card text-center" style="cursor: pointer;">
-                                    <a href="preguntas.html"></script>
-                                        <img class="img-fluid card-img-top w-100 d-block" src="assets/img/ÍCONOS/LIDERAZGO_SONQO.png" alt="Liderazgo">
+                                    <a href="preguntas.html">
+                                        <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/LIDERAZGO_SONQO.png" alt="Liderazgo">
                                     </a>
                                     <div class="card-body info">
                                         <h4 class="card-title">Liderazgo</h4>
@@ -81,7 +81,7 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_empatia()" class="card clean-card text-center" style="cursor: pointer;">
                                         <a href="preguntas.html">
-                                            <img class="img-fluid card-img-top w-100 d-block" src="assets/img/ÍCONOS/EMPATÍA_SONQO.png" alt="Empatía">
+                                            <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/EMPATÍA_SONQO.png" alt="Empatía">
                                         </a>
                                         <div class="card-body info">
                                             <h4 class="card-title">Empatía</h4>
@@ -91,7 +91,7 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_resiliencia()" class="card clean-card text-center" style="cursor: pointer;">
                                         <a href="preguntas.html">
-                                            <img class="img-fluid card-img-top w-100 d-block" src="assets/img/ÍCONOS/RESILIENCIA_SONQO.png" alt="Resiliencia">
+                                            <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/RESILIENCIA_SONQO.png" alt="Resiliencia">
                                         </a>
                                         <div class="card-body info">
                                             <h4 class="card-title">Resiliencia</h4>
@@ -105,7 +105,7 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_gestion_tiempo()" class="card clean-card text-center" style="cursor: pointer;">
                                         <a href="preguntas.html">
-                                            <img class="img-fluid card-img-top w-100 d-block" src="assets/img/ÍCONOS/GESTIÓN_DEL_TIEMPO_SONQO.png" alt="Gestión del Tiempo">
+                                            <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/GESTIÓN_DEL_TIEMPO_SONQO.png" alt="Gestión del Tiempo">
                                         </a>
                                         <div class="card-body info">
                                             <h4 class="card-title">Gestión del tiempo</h4>
@@ -115,7 +115,7 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                 <div onclick="datac_comunicacion_asertiva()" class="card clean-card text-center" style="cursor: pointer;">
                                     <a href="preguntas.html">
-                                        <img class="img-fluid card-img-top w-100 d-block" src="assets/img/ÍCONOS/COMUNICACIÓN_ASERTIVA_SONQO.png" alt="Comunicación Asertiva">
+                                        <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/COMUNICACIÓN_ASERTIVA_SONQO.png" alt="Comunicación Asertiva">
                                     </a>
                                     <div class="card-body info">
                                         <h4 class="card-title">Comunicación Asertiva</h4>
@@ -133,16 +133,16 @@ include 'session.php';
             <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.user.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
-    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
+    <script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
+    <script src="../assets/js/theme.js"></script>
 </body>
 
 </html>
