@@ -1,10 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-// Inicia la sesión para acceder a la información de la sesión
-session_start();
-include 'coneccion.php';
+// Include the database connection file
+include '../coneccion.php';
 
     // Consulta SQL para recuperar usuarios
     $sql = "SELECT * FROM usuario";
