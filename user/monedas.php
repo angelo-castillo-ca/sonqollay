@@ -8,7 +8,7 @@ include 'session.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Profile - Brand</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.user.css">
     <link rel="stylesheet" href="../assets/css/swiper-icons.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="../assets/css/Data-Table-styles.css">
@@ -26,7 +26,7 @@ include 'session.php';
 
 <body id="page-top">
     <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light" style="background: rgb(52,131,225);">
-        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="../assets/img/logos/LOGO%20SONQOLLAY%20CORREGIDO.png" width="171" height="29"></a>
+        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="../assets/img/logos/LOGO SONQOLLAY.png" width="171" height="29"></a>
             <ul class="navbar-nav flex-nowrap ms-auto">
                 <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                     <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
@@ -63,21 +63,21 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">10 monedas</h4>
+                                            <button class="btn btn-primary"><h4 class="card-title m-0">10 monedas</h4></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/pila-de-monedas.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">40 monedas</h4>
+                                            <button class="btn btn-primary"><h4 class="card-title m-0">130 monedas</h4></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/oro.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">120 monedas</h4>
+                                            <button class="btn btn-primary"><h4 class="card-title m-0">200 monedas</h4></button>
                                         </div>
                                     </div>
                                 </div>
@@ -88,14 +88,14 @@ include 'session.php';
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/bolsa-de-dinero.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">240 monedas</h4>
+                                            <button class="btn btn-primary"><h4 class="card-title m-0">310 monedas</h4></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/ahorros.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">400 monedas</h4>
+                                            <button class="btn btn-primary"><h4 class="card-title m-0">500 monedas</h4></button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@ include 'session.php';
             <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
         </div>
     </footer>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.user.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
