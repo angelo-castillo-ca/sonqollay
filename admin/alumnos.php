@@ -4,19 +4,7 @@ ini_set('display_errors', 1);
 
 // Inicia la sesión para acceder a la información de la sesión
 session_start();
-
-$servername = "localhost";
-$username = "root";
-$password = "mysql";
-$dbname = "sonqollay";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
+include 'coneccion.php';
 
     // Consulta SQL para recuperar usuarios
     $sql = "SELECT * FROM usuario";
