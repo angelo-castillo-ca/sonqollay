@@ -1,14 +1,16 @@
 <?php
+// Mostrar errores para depuración
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Include the database connection file
+// Incluir el archivo de conexión a la base de datos
 include '../coneccion.php';
 
 // Verificar si se enviaron datos de formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario de manera segura
     $id = $_POST['id'];
+    $nombres = htmlspecialchars($_POST['nombres']);
     $apellido_paterno = htmlspecialchars($_POST['apellido_paterno']);
     $apellido_materno = htmlspecialchars($_POST['apellido_materno']);
     $correo = htmlspecialchars($_POST['correo']);
@@ -17,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $creditos = isset($_POST['creditos']) ? intval($_POST['creditos']) : 0; // Convertir a entero y establecer como cero si no está definido
 
     // Consulta preparada para actualizar los datos del usuario
-    $sql = "UPDATE usuario SET apellido_paterno=?, apellido_materno=?, correo=?, passwd=?, rol=?, creditos=? WHERE id=?";
+    $sql = "UPDATE usuario SET nombres=?, apellido_paterno=?, apellido_materno=?, correo=?, passwd=?, rol=?, creditos=? WHERE id=?";
 
     // Preparar la consulta
     $stmt = $conn->prepare($sql);
 
     if ($stmt) {
         // Vincular parámetros y ejecutar la consulta
-        $stmt->bind_param("sssssii", $apellido_paterno, $apellido_materno, $correo, $passwd, $rol, $creditos, $id);
+        $stmt->bind_param("ssssssii", $nombres, $apellido_paterno, $apellido_materno, $correo, $passwd, $rol, $creditos, $id);
         if ($stmt->execute()) {
             // Si la actualización fue exitosa
             echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'alumnos.html']);

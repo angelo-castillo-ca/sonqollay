@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // Include the database connection file
-include 'coneccion.php';
+include '../coneccion.php';
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -15,12 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rol = 'user';
     $creditos = 0;
 
-    // Validate the data
-    if ($password != $verifyPassword) {
-        echo "Las contraseñas no coinciden. Por favor, inténtalo de nuevo.";
-        exit();
-    }
-
     // Hash de la contraseña (puedes usar algoritmos más seguros en un entorno de producción)
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
@@ -29,11 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($conn->query($sql) === TRUE) {
         // Registro exitoso, redirige a la página de confirmación
-        header("Location: confirmacion_registro.php");
+        echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'alumnos.html']);
+        header("Location: alumnos.html");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    
 }
 
 // Close the database connection (optional since PHP automatically closes it at the end of the script)
