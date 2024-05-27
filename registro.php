@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $lastName2 = $_POST['apellido_paterno'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $verifyPassword = $_POST['verifyPassword'];
     $rol = 'user';
     $creditos = 0;
 

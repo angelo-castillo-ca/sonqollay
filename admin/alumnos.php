@@ -4,22 +4,22 @@ ini_set('display_errors', 1);
 // Include the database connection file
 include '../coneccion.php';
 
-    // Consulta SQL para recuperar usuarios
+    // Consulta SQL para recuperar modulos
     $sql = "SELECT * FROM usuario";
     
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
-        // Array para almacenar usuarios
-        $users = array();
+        // Array para almacenar modulos
+        $user = array();
     
         // Recorrer resultados y almacenar en el array
         while($row = $result->fetch_assoc()) {
-            $users[] = $row;
+            $user[] = $row;
         }
     
         // Convertir array a formato JSON y devolverlo
-        echo json_encode($users);
+        echo json_encode($user);
     } else {
         echo "0 resultados";
     }
