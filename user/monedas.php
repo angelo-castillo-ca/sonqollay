@@ -37,74 +37,7 @@ include 'session.php';
                         </form>
                     </div>
                 </li>
-                <li class="nav-item dropdown no-arrow mx-1">
-                    <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                            <h6 class="dropdown-header">Centro de notificaciones</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
-                                </div>
-                                <div><span class="small text-gray-500">December 12, 2019</span>
-                                    <p>A new monthly report is ready to download!</p>
-                                </div>
-                            </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
-                                </div>
-                                <div><span class="small text-gray-500">December 7, 2019</span>
-                                    <p>$290.29 has been deposited into your account!</p>
-                                </div>
-                            </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                                </div>
-                                <div><span class="small text-gray-500">December 2, 2019</span>
-                                    <p>Spending Alert: We've noticed unusually high spending for your account.</p>
-                                </div>
-                            </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown no-arrow mx-1">
-                    <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                            <h6 class="dropdown-header">centro de mensajes</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
-                                    <div class="bg-success status-indicator"></div>
-                                </div>
-                                <div class="fw-bold">
-                                    <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                    <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                </div>
-                            </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
-                                    <div class="status-indicator"></div>
-                                </div>
-                                <div class="fw-bold">
-                                    <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                    <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                </div>
-                            </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
-                                    <div class="bg-warning status-indicator"></div>
-                                </div>
-                                <div class="fw-bold">
-                                    <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                    <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                </div>
-                            </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
-                                    <div class="bg-success status-indicator"></div>
-                                </div>
-                                <div class="fw-bold">
-                                    <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                    <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
-                                </div>
-                            </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                        </div>
-                    </div>
-                    <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
-                </li>
+                
                 <div class="d-none d-sm-block topbar-divider"></div>
                 <li class="nav-item dropdown no-arrow">
                     <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar1.jpeg"></a>
@@ -118,33 +51,33 @@ include 'session.php';
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4" style="text-align: center;">Bienvenido "Usuario"</h3>
+                    <h3 class="text-dark mb-4" style="text-align: center;"></h3>
                 </div>
                 <section class="clean-block features">
                     <div class="container py-4 py-xl-5" style="display: block;">
                         <section style="padding-top: 40px;">
                             <div class="container" style="text-align: center;">
-                                <h1>Modulos</h1>
+                                <h1>Adquiere tus monedas</h1>
                             </div>
                             <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="ÍCONOS/LIDERAZGO_SONQO.png">
+                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">Liderazgo</h4>
+                                            <h4 class="card-title">10 monedas</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="ÍCONOS/EMPATÍA_SONQO.png">
+                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/pila-de-monedas.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">Empatia</h4>
+                                            <h4 class="card-title">40 monedas</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="ÍCONOS/RESILIENCIA_SONQO.png">
+                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/oro.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">Resiliencia</h4>
+                                            <h4 class="card-title">120 monedas</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -153,16 +86,16 @@ include 'session.php';
                         <section style="padding-top: 40px;">
                             <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="ÍCONOS/GESTIÓN_DEL_TIEMPO_SONQO.png">
+                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/bolsa-de-dinero.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">Gestión del tiempo</h4>
+                                            <h4 class="card-title">240 monedas</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="ÍCONOS/COMUNICACIÓN_ASERTIVA_SONQO.png">
+                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/ahorros.png">
                                         <div class="card-body info">
-                                            <h4 class="card-title">Comunicación Asertiva</h4>
+                                            <h4 class="card-title">400 monedas</h4>
                                         </div>
                                     </div>
                                 </div>
