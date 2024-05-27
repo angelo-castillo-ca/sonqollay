@@ -1,3 +1,6 @@
+<?php
+include 'session.php';
+?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 
@@ -23,7 +26,7 @@
 
 <body id="page-top">
     <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light" style="background: rgb(52,131,225);">
-        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="../assets/img/sonqollay.png" width="171" height="29"></a>
+        <div class="container-fluid"><a href="index.html"><img class="img-fluid" src="../assets/img/logos/LOGO%20SONQOLLAY%20CORREGIDO.png" width="171" height="29"></a>
             <ul class="navbar-nav flex-nowrap ms-auto">
                 <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                     <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
