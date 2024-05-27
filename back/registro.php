@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $verifyPassword = $_POST['verifyPassword'];
+    $genero = $_POST["gender"];
     $rol = 'user';
     $creditos = 0;
 
@@ -26,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Insert data into the database
-    $sql = "INSERT INTO usuario (nombres, apellido_materno,apellido_paterno, correo, passwd,rol,creditos) VALUES ('$firstName', '$lastName1', '$lastName2', '$email', '$hashedPassword', '$rol',$creditos)";
+    $sql = "INSERT INTO usuario (nombres, apellido_materno,apellido_paterno, genero, correo, passwd,rol,creditos) VALUES ('$firstName', '$lastName1', '$lastName2', '$genero', '$email', '$hashedPassword', '$rol',$creditos)";
 
     if ($conn->query($sql) === TRUE) {
         // Registro exitoso, redirige a la página de confirmación

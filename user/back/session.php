@@ -1,4 +1,5 @@
 <?php
+include '../../back/coneccion.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -8,12 +9,10 @@ session_start();
 // Verifica si el usuario está autenticado (tiene un user_id en la sesión)
 if (isset($_SESSION['user_id'])) {
     $userId = intval($_SESSION['user_id']);
-
     // Ahora puedes utilizar $userId en tu consulta u otras operaciones
     // Ejemplo de uso en una consulta
-    include '../coneccion.php';
 
-    $sql = "SELECT id, nombres,apellido_paterno,apellido_materno FROM usuario WHERE id = ?";
+    $sql = "SELECT id, nombres, apellido_paterno, apellido_materno FROM usuario WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
@@ -40,7 +39,7 @@ if (isset($_SESSION['user_id'])) {
     $conn->close();
 } else {
     // El usuario no está autenticado, redirige a la página de inicio de sesión
-    header("Location: login.php");
+    header("Location: ../../ingreso.html");
     exit();
 }
 ?>

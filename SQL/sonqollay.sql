@@ -3,16 +3,14 @@ CREATE DATABASE IF NOT EXISTS sonqollay;
 USE sonqollay;
 create table modulos(
                         id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                        nombre varchar(300) not null,
-                        creditos int
-
+                        nombre varchar(300) not null
 );
-INSERT INTO modulos(nombre,creditos)
-VALUES ('resiliencia','50'),
-       ('comuniacion_asertiva','50'),
-       ('gestion_tiempo','50'),
-       ('liderazgo','50'),
-       ('empatia','50');
+INSERT INTO modulos(nombre)
+VALUES ('resiliencia'),
+       ('comuniacion_asertiva'),
+       ('gestion_tiempo'),
+       ('liderazgo'),
+       ('empatia');
 CREATE TABLE liderazgo(
                           id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
                           pregunta varchar(300) not null,
@@ -70,9 +68,10 @@ CREATE TABLE usuario(
                         nombres VARCHAR(255) NOT NULL,
                         apellido_paterno VARCHAR(255) NOT NULL,
                         apellido_materno VARCHAR(255) NOT NULL,
-                        correo varchar(300) not null,
-                        passwd varchar(300) not null,
-                        rol varchar(5) not null,
+                        genero varchar(10) NOT NULL,
+                        correo varchar(300) NOT NULL,
+                        passwd varchar(300) NOT NULL,
+                        rol varchar(5) NOT NULL,
                         creditos int
 );
 create table compras(

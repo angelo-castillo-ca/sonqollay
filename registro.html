@@ -23,7 +23,7 @@
                     <div class="text-center">
                         <h4 class="text-dark mb-4">Unete a nuestra comunidad</h4>
                     </div>
-                    <form class="user" action="registro.php" method="post">
+                    <form class="user" action="back/registro.php" method="post">
 						<div class="mb-3"><input class="form-control form-control-user" type="email" id="email" name="email" placeholder="Email" required=""></div>
 				
 						<div class="row mb-3">
@@ -42,7 +42,18 @@
 						<div class="row mb-3">
 							<div class="mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="apellido_materno" name="apellido_materno" placeholder="Apellido Materno" required=""></div>
 						</div>
-
+						<div class="row">
+							<div class="col">
+								<div class="mb-3">
+									<label class="form-label" for="gender"><strong>Género</strong></label>
+									<select class="form-control" id="gender" name="gender" required>
+										<option value="">Selecciona una opción</option>
+										<option value="M">Masculino</option>
+										<option value="F">Femenino</option>
+									</select>
+								</div>
+							</div>
+						</div>
 				
 						<div class="row mb-3">
 							<p id="emailErrorMsg" class="text-danger" style="display:none;">Paragraph</p>

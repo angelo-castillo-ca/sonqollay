@@ -65,7 +65,7 @@
     <script>
         // Redirige automáticamente después de 4 segundos
         setTimeout(function(){
-            window.location.href = 'ingreso.html';
+            window.location.href = '../ingreso.html';
         }, 4000);
     </script>
 </head>
