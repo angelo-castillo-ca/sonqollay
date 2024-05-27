@@ -83,6 +83,7 @@
         
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
@@ -96,7 +97,6 @@
     <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="../assets/js/Simple-Slider.js"></script>
     <script src="../assets/js/theme.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
             // Hacer una solicitud AJAX al archivo PHP
@@ -106,7 +106,7 @@
                 success: function (data) {
                     // Limpiar el cuerpo de la tabla
                     $('#example tbody').empty();
-
+    
                     // Recorrer los datos recibidos y agregarlos a la tabla
                     $.each(data, function (index, value) {
                         $('#example tbody').append('<tr>' +
@@ -115,12 +115,18 @@
                             '<td>' + value.apellido_paterno + '</td>' +
                             '<td>' + value.apellido_materno + '</td>' +
                             '<td>' + value.creditos + '</td>' +
-                            '<td><button type="button" class="btn btn-warning d-flex align-items-center" style="height: 38px;">Editar <i class="fa fa-edit"></i></button></td>' +
+                            '<td><button type="button" class="btn btn-warning d-flex align-items-center edit-button" style="height: 38px;" data-id="' + value.id + '">Editar <i class="fa fa-edit"></i></button></td>' +
                             '</tr>');
                     });
-
+    
                     // Inicializar la tabla DataTable
                     $('#example').DataTable();
+    
+                    // Agregar evento de clic al botón de editar
+                    $('.edit-button').click(function() {
+                        var userId = $(this).data('id');
+                        window.location.href = 'Editar-user.html/' + userId;
+                    });
                 },
                 error: function(xhr, status, error) {
                     console.error(xhr.responseText);
@@ -129,7 +135,7 @@
                 }
             });
         });
-    </script>
+    </script>  
 
 </body>
 
