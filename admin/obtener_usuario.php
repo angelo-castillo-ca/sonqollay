@@ -5,10 +5,9 @@ ini_set('display_errors', 1);
 include '../coneccion.php';
 
 // Verificar si se proporcionó un ID de usuario válido
-if (isset($_GET['id']) && !empty($_GET['id'])) {
+if (isset($_GET['$userId']) && !empty($_GET['id'])) {
     // Escapar el ID del usuario para evitar inyecciones SQL
-    $userId = $conn->real_escape_string($_GET['id']);
-
+    $userId = $_GET['id'];
     // Consultar la base de datos para obtener los detalles del usuario
     $sql = "SELECT * FROM usuarios WHERE id = '$userId'";
     $result = $conn->query($sql);
