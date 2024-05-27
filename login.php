@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($row['rol'] == 'admin') {
                 header("Location: admin/confirmacion_ingreso.php");
             } elseif ($row['rol'] == 'user') {
-                header("Location: user/index.php");
+                header("Location: user/back/confirmacion_ingreso.php");
             } else {
                 // En caso de que el rol no sea reconocido, redirigir a una página de error
                 header("Location: error.php");
