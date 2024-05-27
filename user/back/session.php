@@ -1,14 +1,12 @@
 <?php
-include '../../back/coneccion.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-// Inicia la sesión para acceder a la información de la sesión
 session_start();
 
 // Verifica si el usuario está autenticado (tiene un user_id en la sesión)
 if (isset($_SESSION['user_id'])) {
     $userId = intval($_SESSION['user_id']);
+    include '../back/coneccion.php';
     // Ahora puedes utilizar $userId en tu consulta u otras operaciones
     // Ejemplo de uso en una consulta
 
