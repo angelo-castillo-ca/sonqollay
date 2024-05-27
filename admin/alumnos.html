@@ -103,10 +103,10 @@
             $.ajax({
                 url: 'alumnos.php',
                 dataType: 'json',
-                success: function (data) { // Aquí estaba el error
+                success: function (data) {
                     // Limpiar el cuerpo de la tabla
                     $('#example tbody').empty();
-    
+
                     // Recorrer los datos recibidos y agregarlos a la tabla
                     $.each(data, function (index, value) {
                         $('#example tbody').append('<tr>' +
@@ -118,6 +118,14 @@
                             '<td><button type="button" class="btn btn-warning d-flex align-items-center" style="height: 38px;">Editar <i class="fa fa-edit"></i></button></td>' +
                             '</tr>');
                     });
+
+                    // Inicializar la tabla DataTable
+                    $('#example').DataTable();
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                    console.error(status);
+                    console.error(error);
                 }
             });
         });
