@@ -141,13 +141,13 @@ $user_id = $_SESSION['user_id'];
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombres</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['nombre_usuario']; ?>" name="email" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombres</strong></label><input class="form-control" type="input" id="nombres" value="<?php echo $_SESSION['nombre_usuario']; ?>" name="first_name" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name1"><strong>Apellido Paterno</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['apellido_paterno']; ?>" name="email" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="last_name1"><strong>Apellido Paterno</strong></label><input class="form-control" type="input" id="last_name1" value="<?php echo $_SESSION['apellido_paterno']; ?>" name="last_name1" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name2"><strong>Apellido Materno</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['apellido_materno']; ?>" name="email" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="last_name2"><strong>Apellido Materno</strong></label><input class="form-control" type="input" id="last_name2" value="<?php echo $_SESSION['apellido_materno']; ?>" name="last_name2" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                 </div>
                                                 <div>

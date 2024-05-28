@@ -36,7 +36,7 @@
             // Verificar si el ID del modulo es válido
             if (moduloId && parseInt(moduloId) > 0) {
             // Realizar la solicitud para obtener los datos del modulo
-            fetch(`obtener_modulo.php?id=${moduloId}`)
+            fetch(`back/obtener_modulo.php?id=${moduloId}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -58,7 +58,7 @@
                 const formData = new FormData(this);
 
                 // Enviar los datos del formulario para editar el usuario
-                fetch('editar_modulo.php', {
+                fetch('back/editar_modulo.php', {
                     method: 'POST',
                     body: formData
                 })

@@ -30,7 +30,7 @@
                         <div class="text-center">
                             <h4 class="text-dark mb-4">Agregar modulo</h4>
                         </div>
-                        <form class="modulos" action="agregar-modulo.php" method="post">                                        
+                        <form class="modulos" action="back/agregar-modulo.php" method="post">                                        
                             <div class="row mb-3">
                                 <div class="mb-3 mb-sm-0"><input class="form-control form-control-modulos" type="text" id="nombre" name="nombre" placeholder="Nombre" required=""></div>
                             </div>

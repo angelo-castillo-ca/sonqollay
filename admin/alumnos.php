@@ -61,7 +61,7 @@ include 'back/session.php';
     <div>
         <div class="container">
             <div class="col-md-12 d-flex justify-content-end align-items-center md-12" style="margin-right: 20px;">
-                <a href="agregar-usuario.html" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
+                <a href="agregar-usuario.php" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
                     Agregar Usuario&nbsp;<i class="fa fa-plus-circle"></i>
                 </a>
             </div>   
@@ -143,7 +143,7 @@ include 'back/session.php';
             // Agregar evento de clic al botón de editar
             $(document).on('click', '.edit-button', function() {
                 var userId = $(this).data('id');
-                window.location.href = 'Editar-user.html?id=' + userId;
+                window.location.href = 'Editar-user.php?id=' + userId;
             });
         
             // Agregar evento de clic al botón de eliminar

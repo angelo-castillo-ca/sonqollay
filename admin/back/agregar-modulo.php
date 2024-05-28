@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($conn->query($sql) === TRUE) {
         // Registro exitoso, redirige a la página de confirmación
-        echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'modulos.html']);
-        header("Location: modulos.html");
+        echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => '../modulos.php']);
+        header("Location: ../modulos.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

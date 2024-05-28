@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt) {
         // Vincular parámetros y ejecutar la consulta
-        $stmt->bind_param("ssssssii", $nombres, $apellido_paterno, $apellido_materno, $correo, $passwd, $rol, $creditos, $id);
+        $stmt->bind_param("ssssssii", $nombres, $apellido_paterno, $apellido_materno, $correo, $passwd, $rol, $creditos);
         if ($stmt->execute()) {
             // Si la actualización fue exitosa
-            echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'alumnos.html']);
+            echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'alumnos.php']);
         } else {
             // Si hubo un error al ejecutar la consulta
             echo json_encode(['success' => false, 'error' => 'Error al ejecutar la consulta: ' . $stmt->error]);

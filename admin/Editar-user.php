@@ -1,3 +1,6 @@
+<?php
+include 'back/session.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="correo">Correo</label>
-                <input type="email" class="form-control" id="correo" name="correo" required>
+                <input type="email" class="form-control" id="correo" name="correo"required>
             </div>
             <div class="form-group">
                 <label for="passwd">Contraseña</label>
@@ -32,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="rol">Rol</label>
-                <input type="text" class="form-control" id="rol" name="rol" required>
+                <input type="text" class="form-control" id="rol" name="rol"required>
             </div>
             <div class="form-group">
                 <label for="creditos">Créditos</label>
@@ -56,7 +59,7 @@
             // Verificar si el ID del usuario es válido
             if (userId && parseInt(userId) > 0) {
             // Realizar la solicitud para obtener los datos del usuario
-            fetch(`obtener_usuario.php?id=${userId}`)
+            fetch(`back/obtener_usuario.php?id=${userId}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -84,7 +87,7 @@
                 const formData = new FormData(this);
 
                 // Enviar los datos del formulario para editar el usuario
-                fetch('editar_usuario.php', {
+                fetch('back/editar_usuario.php', {
                     method: 'POST',
                     body: formData
                 })

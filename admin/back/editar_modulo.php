@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("sii", $nombre, $creditos, $id);
             if ($stmt->execute()) {
                 // Si la actualización fue exitosa
-                echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'modulos.html']);
+                echo json_encode(['success' => true, 'message' => 'Los cambios se guardaron correctamente', 'redirect_url' => 'modulos.php']);
             } else {
                 // Si hubo un error al ejecutar la consulta
                 echo json_encode(['success' => false, 'error' => 'Error al ejecutar la consulta: ' . $stmt->error]);

@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
     // Ahora puedes utilizar $userId en tu consulta u otras operaciones
     // Ejemplo de uso en una consulta
 
-    $sql = "SELECT id, nombres, apellido_paterno, apellido_materno,correo,avatar FROM usuario WHERE id = ?";
+    $sql = "SELECT id, nombres, apellido_paterno, apellido_materno,correo,rol,creditos,avatar FROM usuario WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
@@ -30,6 +30,8 @@ if (isset($_SESSION['user_id'])) {
         $_SESSION['correo'] = $row['correo'];
         $_SESSION['apellido_paterno'] = $row['apellido_paterno'];
         $_SESSION['apellido_materno'] = $row['apellido_materno'];
+        $_SESSION['creditos'] = $row['creditos'];
+        $_SESSION['rol'] = $row['rol'];
         $_SESSION['avatar_usuario'] = $row['avatar'];
         $_SESSION['nombre_completo_usuario'] = $row['nombres'] . ' ' . $row['apellido_paterno'];
     } else {

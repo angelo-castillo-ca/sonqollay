@@ -61,7 +61,7 @@ include 'back/session.php';
     <div>
         <div class="container">
             <div class="col-md-12 d-flex justify-content-end align-items-center md-12" style="margin-right: 20px;">
-                <a href="agregar-modulo.html" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
+                <a href="agregar-modulo.php" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
                     Agregar modulo&nbsp;<i class="fa fa-plus-circle"></i>
                 </a>
             </div>   
@@ -135,7 +135,7 @@ include 'back/session.php';
             // Agregar evento de clic al botón de editar
             $(document).on('click', '.edit-button', function() {
                 var moduloId = $(this).data('id');
-                window.location.href = 'Editar-modulo.html?id=' + moduloId;
+                window.location.href = 'Editar-modulo.php?id=' + moduloId;
             });
         
             // Agregar evento de clic al botón de eliminar
@@ -143,7 +143,7 @@ include 'back/session.php';
                 var moduloId = $(this).data('id');
                 if (confirm('¿Estás seguro de que deseas eliminar este modulo?')) {
                     $.ajax({
-                        url: 'eliminar_modulo.php',
+                        url: 'back/eliminar_modulo.php',
                         type: 'GET',
                         data: { id: moduloId },
                         dataType: 'json',
