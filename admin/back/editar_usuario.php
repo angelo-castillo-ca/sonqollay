@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Incluir el archivo de conexión a la base de datos
-include '../coneccion.php';
+include '../../back/coneccion.php';
 
 // Verificar si se enviaron datos de formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

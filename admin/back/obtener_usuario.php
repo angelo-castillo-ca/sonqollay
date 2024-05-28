@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // Include the database connection file
-include '../coneccion.php';
+include '../../back/coneccion.php';
 
 // Verificar si se proporcionó un ID de usuario válido
 if (isset($_GET['id']) && !empty($_GET['id'])) {

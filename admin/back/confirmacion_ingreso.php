@@ -65,7 +65,7 @@
     <script>
         // Redirige automáticamente después de 4 segundos
         setTimeout(function(){
-            window.location.href = 'user-admin.html';
+            window.location.href = '../user-admin.html';
         }, 4000);
     </script>
 </head>
@@ -80,7 +80,7 @@
     <div class="circle circle7"></div>
 
     <div class="confirmation-container animated fadeInUp">
-        <h2 class="mb-4">Has ingresado a Sonqollay</h2>
+        <h2 class="mb-4">Esta es la administraciond de Sonqollay</h2>
         <!-- Agrega aquí cualquier contenido adicional o estilos que desees -->
     </div>
 

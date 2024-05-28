@@ -136,18 +136,18 @@ $user_id = $_SESSION['user_id'];
                                             <form action="back/perfil.php" method="post">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Correo</strong></label><input class="form-control" type="email" id="email" placeholder="" name="email" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Correo</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['correo']; ?>" name="email" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombres</strong></label><input class="form-control" type="text" id="first_name" placeholder="" name="first_name" autofocus="" autocomplete="on"></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombres</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['nombre_usuario']; ?>" name="email" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name1"><strong>Apellido Paterno</strong></label><input class="form-control" type="text" id="last_name1" placeholder="" name="last_name1" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="last_name1"><strong>Apellido Paterno</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['apellido_paterno']; ?>" name="email" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name2"><strong>Apellido Materno</strong></label><input class="form-control" type="text" id="last_name2" placeholder="" name="last_name2" autocomplete="on" autofocus=""></div>
+                                                        <div class="mb-3"><label class="form-label" for="last_name2"><strong>Apellido Materno</strong></label><input class="form-control" type="email" id="email" value="<?php echo $_SESSION['apellido_materno']; ?>" name="email" autocomplete="on" autofocus=""></div>
                                                     </div>
                                                 </div>
                                                 <div>
