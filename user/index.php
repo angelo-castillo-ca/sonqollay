@@ -33,7 +33,7 @@ include 'back/session.php';
                                 echo htmlspecialchars($nombre_usuario);
                             ?>
                         </span>
-                        <img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                        <img class="border rounded-circle img-profile" src="<?php echo $_SESSION['avatar_usuario']; ?>"></a>
                         <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                             <a class="dropdown-item" href="perfil.php">
                                 <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a>

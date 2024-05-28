@@ -33,7 +33,7 @@ $user_id = $_SESSION['user_id'];
                                 echo htmlspecialchars($nombre_usuario);
                             ?>
                         </span>
-                        <img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                        <img class="border rounded-circle img-profile" src="<?php echo $_SESSION['avatar_usuario']; ?>"></a>
                         <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                             <a class="dropdown-item" href="perfil.php">
                                 <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a>
@@ -55,9 +55,17 @@ $user_id = $_SESSION['user_id'];
                     <div class="row mb-3">
                         <div class="col-lg-4">
                             <div class="card mb-3">
-                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="../assets/img/iconos/GESTIÓN_DEL_TIEMPO_SONQO.png" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Cambiar foto</button></div>
-                                </div>
+                            <form class="user" action="back/change-avatar.php" method="post" enctype="multipart/form-data">
+                                <div class="card-body text-center shadow">
+                                    <img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['avatar_usuario']; ?>" width="160" height="160">
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary btn-sm" type="submit">Cambiar foto</button>
+                                    </div>
+                                </div>  
+                            </form>
                             </div>
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">

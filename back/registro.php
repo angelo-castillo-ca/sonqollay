@@ -22,12 +22,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Las contraseñas no coinciden. Por favor, inténtalo de nuevo.";
         exit();
     }
+    if ($genero === 'M') {
+        $avatar = '../assets/img/avatars/hombre.png';
+    } elseif ($genero === 'F') {
+        $avatar = '../assets/img/avatars/mujer.png';
+    } else {
+        die("Género inválido.");
+    }
 
     // Hash de la contraseña (puedes usar algoritmos más seguros en un entorno de producción)
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Insert data into the database
-    $sql = "INSERT INTO usuario (nombres, apellido_materno,apellido_paterno, genero, correo, passwd,rol,creditos) VALUES ('$firstName', '$lastName1', '$lastName2', '$genero', '$email', '$hashedPassword', '$rol',$creditos)";
+    $sql = "INSERT INTO usuario (nombres, apellido_materno,apellido_paterno, genero, correo, passwd,rol,avatar,creditos) VALUES ('$firstName', '$lastName1', '$lastName2', '$genero', '$email', '$hashedPassword', '$rol', '$avatar', $creditos)";
 
     if ($conn->query($sql) === TRUE) {
         // Registro exitoso, redirige a la página de confirmación
