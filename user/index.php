@@ -70,7 +70,7 @@ include 'back/session.php';
                             <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
                             <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                 <div onclick="data_liderazgo()" class="card clean-card text-center" style="cursor: pointer;">
-                                    <a href="preguntas.html">
+                                    <a href="preguntas.php">
                                         <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/LIDERAZGO_SONQO.png" alt="Liderazgo">
                                     </a>
                                     <div class="card-body info">
@@ -80,7 +80,7 @@ include 'back/session.php';
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_empatia()" class="card clean-card text-center" style="cursor: pointer;">
-                                        <a href="preguntas.html">
+                                        <a href="preguntas.php">
                                             <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/EMPATÍA_SONQO.png" alt="Empatía">
                                         </a>
                                         <div class="card-body info">
@@ -90,7 +90,7 @@ include 'back/session.php';
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_resiliencia()" class="card clean-card text-center" style="cursor: pointer;">
-                                        <a href="preguntas.html">
+                                        <a href="preguntas.php">
                                             <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/RESILIENCIA_SONQO.png" alt="Resiliencia">
                                         </a>
                                         <div class="card-body info">
@@ -104,7 +104,7 @@ include 'back/session.php';
                             <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                     <div onclick="data_gestion_tiempo()" class="card clean-card text-center" style="cursor: pointer;">
-                                        <a href="preguntas.html">
+                                        <a href="preguntas.php">
                                             <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/GESTIÓN_DEL_TIEMPO_SONQO.png" alt="Gestión del Tiempo">
                                         </a>
                                         <div class="card-body info">
@@ -114,7 +114,7 @@ include 'back/session.php';
                                 </div>
                                 <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
                                 <div onclick="datac_comunicacion_asertiva()" class="card clean-card text-center" style="cursor: pointer;">
-                                    <a href="preguntas.html">
+                                    <a href="preguntas.php">
                                         <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/iconos/COMUNICACIÓN_ASERTIVA_SONQO.png" alt="Comunicación Asertiva">
                                     </a>
                                     <div class="card-body info">

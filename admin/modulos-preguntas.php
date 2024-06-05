@@ -61,8 +61,8 @@ include 'back/session.php';
     <div>
         <div class="container">
             <div class="col-md-12 d-flex justify-content-end align-items-center md-12" style="margin-right: 20px;">
-                <a href="agregar-usuario.php" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
-                    Agregar Usuario&nbsp;<i class="fa fa-plus-circle"></i>
+                <a href="agregar-modulo.php" class="btn btn-primary d-flex align-items-center align-self-center ml-auto" style="height: 38px;background-color: rgb(21,221,4);">
+                    Agregar preguntas&nbsp;<i class="fa fa-plus-circle"></i>
                 </a>
             </div>   
             <div style="height: 20px;"></div>   
@@ -72,13 +72,11 @@ include 'back/session.php';
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Nombres</th>
-                                <th>Apellido Paterno</th>
-                                <th>Apellido Materno</th>
-                                <th>Correo</th>
-                                <th>Rol</th>
-                                <th>Créditos</th>
-                                <th>Accion</th>
+                                <th>Pregunta</th>
+                                <th>Respuesta correcta</th>
+                                <th>respuesta2</th>
+                                <th>respuesta3</th>
+                                <th>respuesta4</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -105,7 +103,7 @@ include 'back/session.php';
     <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="../assets/js/Simple-Slider.js"></script>
     <script src="../assets/js/theme.js"></script>
-    <script src="js/alumnos.js"></script>
+    <script src="js/modulos-preguntas.js"></script>
 
 </body>
 
