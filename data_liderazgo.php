@@ -7,7 +7,7 @@ header('Content-Type: application/json');
 
 try {
     // Consulta SQL para obtener datos de la tabla liderazgo
-    $sql = "SELECT * FROM liderazgo";
+    $sql = "SELECT * FROM preguntas where nombre=1";
     $result = $conn->query($sql);
 
     // Verificar errores en la consulta SQL

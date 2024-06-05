@@ -15,6 +15,9 @@ $(document).ready(function () {
                     '<td>' +
                     '<button type="button" class="btn btn-danger d-flex align-items-center eliminar-button" style="height: 38px;" data-id="' + value.id + '">Eliminar <i class="fa fa-trash"></i></button>' +
                     '</td>' +
+                    '<td>' +
+                    '<button type="button" class="btn btn-primary d-flex align-items-center expand-button" style="height: 38px;" data-id="' + value.id + '">Preguntas</button>' +
+                    '</td>' +
                     '</tr>');
             });
         },
@@ -33,6 +36,11 @@ $(document).ready(function () {
         var moduloId = $(this).data('id');
         window.location.href = 'Editar-modulo.php?id=' + moduloId;
     });
+
+    $(document).on('click', '.expand-button', function() {
+        var moduleId = $(this).data('id');
+        window.location.href = 'modulos-preguntas.php?id=' + moduleId;
+      });
 
     // Agregar evento de clic al botón de eliminar
     $(document).on('click', '.eliminar-button', function() {
