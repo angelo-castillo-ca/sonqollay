@@ -6,13 +6,13 @@ create table modulos(
                         nombre varchar(300) not null,
                         creditos int not null
 );
-INSERT INTO modulos(nombre)
+INSERT INTO modulos(nombre,creditos)
 VALUES ('resiliencia',30),
        ('comuniacion_asertiva',30),
        ('gestion_tiempo',30),
        ('liderazgo',30),
        ('empatia',30);
-CREATE TABLE liderazgo(
+CREATE TABLE preguntas(
                           id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
                           pregunta varchar(300) not null,
                           respuesta1c varchar(300) not null,
@@ -23,46 +23,8 @@ CREATE TABLE liderazgo(
                           foreign key (nombre) references modulos(id)
 );
 
-CREATE TABLE resiliencia(
-                            id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                            pregunta varchar(300) not null,
-                            respuesta1c varchar(300) not null,
-                            respuesta2 varchar(300) not null,
-                            respuesta3 varchar(300) not null,
-                            respuesta4 varchar(300) not null,
-                            nombre MEDIUMINT NOT NULL,
-                            foreign key (nombre) references modulos(id)
-);
-CREATE TABLE gestion_tiempo(
-                               id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                               pregunta varchar(300) not null,
-                               respuesta1c varchar(300) not null,
-                               respuesta2 varchar(300) not null,
-                               respuesta3 varchar(300) not null,
-                               respuesta4 varchar(300) not null,
-                               nombre MEDIUMINT NOT NULL,
-                               foreign key (nombre) references modulos(id)
-);
-CREATE TABLE empatia(
-                        id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                        pregunta varchar(300) not null,
-                        respuesta1c varchar(300) not null,
-                        respuesta2 varchar(300) not null,
-                        respuesta3 varchar(300) not null,
-                        respuesta4 varchar(300) not null,
-                        nombre MEDIUMINT NOT NULL,
-                        foreign key (nombre) references modulos(id)
-);
-CREATE TABLE comunicacion_asertiva(
-                                      id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                                      pregunta varchar(300) not null,
-                                      respuesta1c varchar(300) not null,
-                                      respuesta2 varchar(300) not null,
-                                      respuesta3 varchar(300) not null,
-                                      respuesta4 varchar(300) not null,
-                                      nombre MEDIUMINT NOT NULL,
-                                      foreign key (nombre) references modulos(id)
-);
+select preguntas.* from preguntas inner join modulos on modulos.id =preguntas.nombre;
+
 
 CREATE TABLE usuario(
                         id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -83,7 +45,7 @@ create table compras(
                         foreign key (id_usuario) references usuario(id),
                         foreign key (id_modulo) references modulos(id)
 );
-INSERT INTO liderazgo(pregunta, respuesta1c, respuesta2, respuesta3, respuesta4,nombre) VALUES
+INSERT INTO preguntas(pregunta, respuesta1c, respuesta2, respuesta3, respuesta4,nombre) VALUES
                                                                                             ('Estás a cargo de un proyecto que ha enfrentado desafíos inesperados y retrasos. Tu equipo está desanimado y el plazo se está acercando. ¿Qué harías? ','Abandonar el proyecto y empezar de nuevo.','Comunicarte con el equipo, identificar soluciones y ajustar el plan.','Culpar a otros por los problemas y buscar nuevas contrataciones.','Ignorar los problemas y esperar que se resuelvan por sí mismos.',1),
                                                                                             ('Has perdido tu empleo y te sientes desesperado. ¿Cuál sería una estrategia resiliente para enfrentar esta situación?','Aislarte y evitar hablar sobre la pérdida del empleo.','Buscar apoyo de amigos, familiares o redes profesionales y explorar nuevas oportunidades.','Decidir que nunca más buscarás empleo debido a la situación económica.','Culpar a otros por la pérdida del empleo y renunciar a buscar trabajo.',1),
                                                                                             ('Estás a cargo de un equipo que está experimentando conflictos y falta de comunicación. ¿Cómo manejarías esta situación de manera resiliente?','Ignorar los problemas y esperar a que se resuelvan por sí mismos.','Responsabilizar a un miembro del equipo por los conflictos y tomar medidas punitivas.','Facilitar una reunión para que los miembros del equipo expresen sus preocupaciones y trabajar juntos en soluciones.','Dejar el equipo y buscar uno nuevo sin conflictos.',1),
@@ -253,6 +215,7 @@ conflicto.','Abordar abiertamente los problemas, buscar comunicación y trabajar
 comunitario.','Ignorar los fracasos y continuar sin cambios en tu enfoque.','Reflexionar sobre los fracasos, identificar áreas de mejora y ajustar tu estrategia para el proyecto.','Culpar a factores externos por los fracasos y sentirte desanimado.',1),
                                                                                             ('Te encuentras en una situación en la que estás experimentando una falta de dirección y propósito en tu vida. ¿Cuál es una respuesta resiliente?','Ignorar la falta de dirección y continuar con la rutina sin cambios.','Dejar que la falta de propósito afecte tu bienestar emocional y mental.','Reflexionar sobre tus valores y metas, explorar nuevas oportunidades y buscar formas de encontrar propósito.','Culpar a factores externos por la falta de dirección y sentirte
 desesperado.',1);
+
 
 
 
