@@ -59,10 +59,10 @@ include 'back/session.php';
                         <img class="border rounded-circle img-profile" src="<?php echo htmlspecialchars($_SESSION['avatar_usuario']); ?>">
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
-                        <a class="dropdown-item" href="perfil.html">
+                        <a class="dropdown-item" href="perfil.php">
                             <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil
                         </a>
-                        <a class="dropdown-item" href="change-password.html">
+                        <a class="dropdown-item" href="change-password.php">
                             <i class="fas fa-user-lock fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Cambiar contraseña
                         </a>
                         <a class="dropdown-item" href="modulosA.html">
@@ -71,7 +71,7 @@ include 'back/session.php';
                         <a class="dropdown-item" href="modulos.html">
                             <i class="fas fa-pencil-alt fa-sm fa-fw me-2 text-gray-400"></i>Mis módulos&nbsp; por llevar
                         </a>
-                        <a class="dropdown-item" href="close.php">
+                        <a class="dropdown-item" href="back/close.php">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Salir
                         </a>
                     </div>
@@ -88,50 +88,41 @@ include 'back/session.php';
             </div>
             <section class="clean-block features">
                 <div class="container py-4 py-xl-5" style="display: block;">
+                    <?php
+                    // Incluir el archivo de conexión
+                    include '../back/coneccion.php';
+                    error_reporting(E_ALL);
+                    ini_set('display_errors', 1);
+                    
+                    // Consulta a la base de datos
+                    $sql = "SELECT nombre, precio, creditos FROM planes";
+                    $result = $conn->query($sql);
+                    ?>
                     <section style="padding-top: 40px;">
                         <div class="container" style="text-align: center;">
                             <h1>Adquiere tus monedas</h1>
                         </div>
                         <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
-                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
-                                    <div class="card-body info">
-                                        <button class="btn btn-primary comprar-monedas" data-cantidad="10"><h4 class="card-title m-0">10 monedas</h4></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/pila-de-monedas.png">
-                                    <div class="card-body info">
-                                        <button class="btn btn-primary comprar-monedas" data-cantidad="130"><h4 class="card-title m-0">130 monedas</h4></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/oro.png">
-                                    <div class="card-body info">
-                                        <button class="btn btn-primary comprar-monedas" data-cantidad="200"><h4 class="card-title m-0">200 monedas</h4></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section style="padding-top: 40px;">
-                        <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
-                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/bolsa-de-dinero.png">
-                                    <div class="card-body info">
-                                        <button class="btn btn-primary comprar-monedas" data-cantidad="310"><h4 class="card-title m-0">310 monedas</h4></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/ahorros.png">
-                                    <div class="card-body info">
-                                        <button class="btn btn-primary comprar-monedas" data-cantidad="500"><h4 class="card-title m-0">500 monedas</h4></button>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            if ($result->num_rows > 0) {
+                                // Iterar sobre los resultados y generar el HTML
+                                while($row = $result->fetch_assoc()) {
+                                    echo '<div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                            <div class="card clean-card text-center">
+                                                <img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
+                                                <div class="card-body info">
+                                                    <button class="btn btn-primary comprar-monedas" data-cantidad="' . $row["creditos"] . '">
+                                                        <h4 class="card-title m-0">' . $row["creditos"] . ' monedas</h4>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>';
+                                }
+                            } else {
+                                echo "<p>No hay planes disponibles</p>";
+                            }
+                            $conn->close();
+                            ?>
                         </div>
                     </section>
                 </div>
