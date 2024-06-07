@@ -40,7 +40,7 @@ include 'back/session.php';
             <li class="nav-item dropdown no-arrow">
                 <div class="nav-item dropdown no-arrow d-flex align-items-center">
                     <a href="monedas.php" class="d-flex align-items-center">
-                        <span class="d-none d-lg-inline me-2 text-gray-600 small">
+                        <span id="creditos" class="d-none d-lg-inline me-2 text-gray-600 small">
                             <?php
                                 $creditos = $_SESSION['creditos'] ?? 0;
                                 echo "$" . htmlspecialchars($creditos);
@@ -80,83 +80,108 @@ include 'back/session.php';
         </ul>
     </div>
 </nav>
-    <div id="wrapper">
-        <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
-                <div class="container-fluid">
-                    <h3 class="text-dark mb-4" style="text-align: center;"></h3>
-                </div>
-                <section class="clean-block features">
-                    <div class="container py-4 py-xl-5" style="display: block;">
-                        <section style="padding-top: 40px;">
-                            <div class="container" style="text-align: center;">
-                                <h1>Adquiere tus monedas</h1>
-                            </div>
-                            <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
-                                <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
-                                        <div class="card-body info">
-                                            <button class="btn btn-primary"><h4 class="card-title m-0">10 monedas</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/pila-de-monedas.png">
-                                        <div class="card-body info">
-                                            <button class="btn btn-primary"><h4 class="card-title m-0">130 monedas</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/oro.png">
-                                        <div class="card-body info">
-                                            <button class="btn btn-primary"><h4 class="card-title m-0">200 monedas</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section style="padding-top: 40px;">
-                            <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
-                                <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/bolsa-de-dinero.png">
-                                        <div class="card-body info">
-                                            <button class="btn btn-primary"><h4 class="card-title m-0">310 monedas</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
-                                    <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/ahorros.png">
-                                        <div class="card-body info">
-                                            <button class="btn btn-primary"><h4 class="card-title m-0">500 monedas</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </section>
+<div id="wrapper">
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <div class="container-fluid">
+                <h3 class="text-dark mb-4" style="text-align: center;"></h3>
             </div>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    </div>
-    <footer class="bg-white sticky-footer">
-        <div class="container my-auto">
-            <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+            <section class="clean-block features">
+                <div class="container py-4 py-xl-5" style="display: block;">
+                    <section style="padding-top: 40px;">
+                        <div class="container" style="text-align: center;">
+                            <h1>Adquiere tus monedas</h1>
+                        </div>
+                        <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/moneda-de-dolar.png">
+                                    <div class="card-body info">
+                                        <button class="btn btn-primary comprar-monedas" data-cantidad="10"><h4 class="card-title m-0">10 monedas</h4></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/pila-de-monedas.png">
+                                    <div class="card-body info">
+                                        <button class="btn btn-primary comprar-monedas" data-cantidad="130"><h4 class="card-title m-0">130 monedas</h4></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/oro.png">
+                                    <div class="card-body info">
+                                        <button class="btn btn-primary comprar-monedas" data-cantidad="200"><h4 class="card-title m-0">200 monedas</h4></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="padding-top: 40px;">
+                        <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/bolsa-de-dinero.png">
+                                    <div class="card-body info">
+                                        <button class="btn btn-primary comprar-monedas" data-cantidad="310"><h4 class="card-title m-0">310 monedas</h4></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4" style="margin-top: 35px;">
+                                <div class="card clean-card text-center"><img class="img-fluid card-img-top w-100 d-block" src="../assets/img/monedas/ahorros.png">
+                                    <div class="card-body info">
+                                        <button class="btn btn-primary comprar-monedas" data-cantidad="500"><h4 class="card-title m-0">500 monedas</h4></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
         </div>
-    </footer>
-    <script src="../assets/bootstrap/js/bootstrap.min.user.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
-    <script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
-    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
-    <script src="../assets/js/Simple-Slider.js"></script>
-    <script src="../assets/js/theme.js"></script>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>
+<footer class="bg-white sticky-footer">
+    <div class="container my-auto">
+        <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+    </div>
+</footer>
+<script src="../assets/bootstrap/js/bootstrap.min.user.js"></script>
+<script src="../assets/js/bs-init.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
+<script src="../assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
+<script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+<script src="../assets/js/Simple-Slider.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.comprar-monedas').forEach(button => {
+            button.addEventListener('click', function() {
+                const cantidad = this.getAttribute('data-cantidad');
+                fetch('comprar_monedas.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ cantidad })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('creditos').innerText = '$' + data.creditos;
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
