@@ -113,6 +113,7 @@ include 'back/session.php';
                                                 <div class="card-body info">
                                                     <button class="btn btn-primary comprar-monedas" data-cantidad="' . $row["creditos"] . '">
                                                         <h4 class="card-title m-0">' . $row["creditos"] . ' monedas</h4>
+                                                        <h4 class="card-title m-0">' . $row["precio"] . ' $</h4>
                                                     </button>
                                                 </div>
                                             </div>
