@@ -27,6 +27,8 @@ function generarjsonDatosLiderazgo() {
 }
 let respuestaSeleccionada = null;
 let preguntaActual = 0;
+const numPreguntasPermitidas = 5;
+
 function generarBotonRespuesta(respuestaTexto, respuestaId, preguntaId) {
     const button = document.createElement('button');
     button.id = respuestaId;
@@ -51,18 +53,23 @@ function generarBotonRespuesta(respuestaTexto, respuestaId, preguntaId) {
 
 function revisarRespuesta(preguntaId, respuestaSeleccionada) {
     const respuestaCorrecta = 'respuesta1c'; // Respuesta correcta
-    const respuestaSeleccionadaButtonId = respuestaSeleccionada;
     const allButtons = document.querySelectorAll('.btn-primary');
     const progressbar = document.querySelector('.progress-bar');
 
-    if (respuestaSeleccionadaButtonId === respuestaCorrecta) {
+    if (respuestaSeleccionada === respuestaCorrecta) {
         // Respuesta correcta
         alert('¡Respuesta correcta!');
         // Avanzar la barra de progreso
         const progreso = ((preguntaActual + 1) / 80) * 100;
         progressbar.style.width = `${progreso}%`;
         preguntaActual++;
-        mostrarSiguientePregunta();
+        console.log('Pregunta actual: ', preguntaActual);
+        if (preguntaActual < numPreguntasPermitidas) {
+            mostrarSiguientePregunta();
+        } else {
+            // Mostrar la ventana emergente de confirmación
+            $('#modalConfirmacion').modal('show');
+        }
     } else {
         // Respuesta incorrecta
         alert('Vuelve a intentarlo');

@@ -7,6 +7,7 @@ include 'back/session.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Sonqollay-web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/swiper-icons.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
@@ -21,7 +22,6 @@ include 'back/session.php';
     <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="../assets/css/Steps-Progressbar.css">
-    <
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-body py-3">
@@ -43,9 +43,31 @@ include 'back/session.php';
             </div>
         </section>
     </main>
-    <div id="preguntas-container"></div>
-    <div id="respuestas-container"></div>
+    <div id="preguntas-container" class="container mt-5"></div>
+    <div id="respuestas-container" class="container mt-3"></div>
+    <!-- Ventana emergente para confirmar si el usuario quiere continuar -->
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" role="dialog" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalConfirmacionLabel">Confirmación de Continuación</h5>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¿Quieres seguir respondiendo preguntas? Necesitas 100 monedas para adquirir este módulo.
+                </div>
+                <div class="modal-footer">
+                    <a href="ventana_monedas.php" class="btn btn-link">Ir a la ventana de Monedas</a>
+                    <button id="btnPagarMonedas" type="button" class="btn btn-primary">Pagar 100 monedas</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
