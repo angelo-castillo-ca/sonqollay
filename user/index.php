@@ -23,7 +23,7 @@ include 'back/session.php';
 <body id="page-top">
     <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light" style="background: rgb(52,131,225);">
     <div class="container-fluid">
-        <a href="index.html">
+        <a href="index.php">
             <img class="img-fluid" src="../assets/img/logos/LOGO SONQOLLAY.png" width="171" height="29">
         </a>
         <ul class="navbar-nav flex-nowrap ms-auto">
