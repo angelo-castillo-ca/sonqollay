@@ -3,27 +3,29 @@ include 'back/session.php';
 ?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-<head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Sonqollay-web</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <title>Profile - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.user.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="../assets/css/swiper-icons.css">
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="../assets/css/Data-Table-styles.css">
     <link rel="stylesheet" href="../assets/css/Data-Table.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../assets/css/Lista-Productos-Canito.css">
     <link rel="stylesheet" href="../assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
     <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="../assets/css/Navbar.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Table-with-Icon-Buy-Button-styles.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Table-with-Icon-Buy-Button.css">
     <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="../assets/css/Steps-Progressbar.css">
-    <
-</head>
 <body>
 <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light" style="background: rgb(52,131,225);">
     <div class="container-fluid">
@@ -34,7 +36,7 @@ include 'back/session.php';
             <li class="nav-item dropdown no-arrow">
                 <div class="nav-item dropdown no-arrow d-flex align-items-center">
                     <a href="monedas.php" class="d-flex align-items-center">
-                        <span class="d-none d-lg-inline me-2 text-gray-600 small">
+                        <span id="creditos" class="d-none d-lg-inline me-2 text-gray-600 small">
                             <?php
                                 $creditos = $_SESSION['creditos'] ?? 0;
                                 echo "$" . htmlspecialchars($creditos);
