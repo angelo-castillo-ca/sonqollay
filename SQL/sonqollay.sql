@@ -2,9 +2,53 @@ DROP DATABASE IF EXISTS sonqollay;
 CREATE DATABASE IF NOT EXISTS sonqollay;
 USE sonqollay;
 create table modulos(
-                        id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                        nombre varchar(300) not null,
-                        creditos int not null
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nombre varchar(300) not null,
+    creditos int not null,
+    imagen varchar(300)
+);
+CREATE TABLE preguntas(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    pregunta varchar(300) not null,
+    respuesta1c varchar(300) not null,
+    respuesta2 varchar(300) not null,
+    respuesta3 varchar(300) not null,
+    respuesta4 varchar(300) not null,
+    nombre MEDIUMINT NOT NULL,
+    foreign key (nombre) references modulos(id)
+);
+CREATE TABLE planes(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nombre varchar(20) not null,
+    precio int,
+    creditos int
+);
+
+INSERT INTO planes(nombre, precio, creditos)
+VALUES('basico',3,50),
+      ('medio',10,200),
+      ('grande',15,350),
+      ('super',20,600),
+      ('premium',50,1000);
+
+CREATE TABLE usuario(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nombres VARCHAR(255) NOT NULL,
+    apellido_paterno VARCHAR(255) NOT NULL,
+    apellido_materno VARCHAR(255) NOT NULL,
+    genero varchar(10) NOT NULL,
+    correo varchar(300) NOT NULL,
+    passwd varchar(300) NOT NULL,
+    rol varchar(5) NOT NULL,
+    avatar varchar(100) NOT NULL,
+    creditos int
+);
+create table compras(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_modulo MEDIUMINT NOT NULL,
+    id_usuario MEDIUMINT NOT NULL,
+    foreign key (id_usuario) references usuario(id),
+    foreign key (id_modulo) references modulos(id)
 );
 INSERT INTO modulos(nombre,creditos)
 VALUES ('resiliencia',30),
@@ -12,39 +56,6 @@ VALUES ('resiliencia',30),
        ('gestion_tiempo',30),
        ('liderazgo',30),
        ('empatia',30);
-CREATE TABLE preguntas(
-                          id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                          pregunta varchar(300) not null,
-                          respuesta1c varchar(300) not null,
-                          respuesta2 varchar(300) not null,
-                          respuesta3 varchar(300) not null,
-                          respuesta4 varchar(300) not null,
-                          nombre MEDIUMINT NOT NULL,
-                          foreign key (nombre) references modulos(id)
-);
-
-select preguntas.* from preguntas inner join modulos on modulos.id =preguntas.nombre;
-
-
-CREATE TABLE usuario(
-                        id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                        nombres VARCHAR(255) NOT NULL,
-                        apellido_paterno VARCHAR(255) NOT NULL,
-                        apellido_materno VARCHAR(255) NOT NULL,
-                        genero varchar(10) NOT NULL,
-                        correo varchar(300) NOT NULL,
-                        passwd varchar(300) NOT NULL,
-                        rol varchar(5) NOT NULL,
-                        avatar varchar(100) NOT NULL,
-                        creditos int
-);
-create table compras(
-                        id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-                        id_modulo MEDIUMINT NOT NULL,
-                        id_usuario MEDIUMINT NOT NULL,
-                        foreign key (id_usuario) references usuario(id),
-                        foreign key (id_modulo) references modulos(id)
-);
 INSERT INTO preguntas(pregunta, respuesta1c, respuesta2, respuesta3, respuesta4,nombre) VALUES
                                                                                             ('Estás a cargo de un proyecto que ha enfrentado desafíos inesperados y retrasos. Tu equipo está desanimado y el plazo se está acercando. ¿Qué harías? ','Abandonar el proyecto y empezar de nuevo.','Comunicarte con el equipo, identificar soluciones y ajustar el plan.','Culpar a otros por los problemas y buscar nuevas contrataciones.','Ignorar los problemas y esperar que se resuelvan por sí mismos.',1),
                                                                                             ('Has perdido tu empleo y te sientes desesperado. ¿Cuál sería una estrategia resiliente para enfrentar esta situación?','Aislarte y evitar hablar sobre la pérdida del empleo.','Buscar apoyo de amigos, familiares o redes profesionales y explorar nuevas oportunidades.','Decidir que nunca más buscarás empleo debido a la situación económica.','Culpar a otros por la pérdida del empleo y renunciar a buscar trabajo.',1),
@@ -218,4 +229,4 @@ desesperado.',1);
 
 
 
-
+select preguntas.* from preguntas inner join modulos on modulos.id =preguntas.nombre;
